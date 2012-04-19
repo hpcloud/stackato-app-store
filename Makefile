@@ -11,10 +11,12 @@ ifndef STACKATO_STORE_BUILD
 endif
 STACKATO_STORE_BUILD := $(STACKATO_STORE_BUILD)/$(STACKATO_STORE_VERSION)
 
-ALL := $(shell (cd $(STACKATO_STORE_SOURCE; echo *.yaml))
-ALLJSON := $(ALL:%.yaml=%.json)
-ALLJSONP := $(ALL:%.yaml=%.jsonp)
-ALL := $(ALLJSON) $(ALLJSONP)
+ALL := $(shell cd $(STACKATO_STORE_SOURCE); echo *.yaml)
+ifeq ($(STACKATO_STORE_VERSION),1.0)
+    ALL := $(ALL:%.yaml=%.jsonp)
+else
+    ALL := $(ALL:%.yaml=%.json)
+endif
 ALL := $(ALL:%=$(STACKATO_STORE_BUILD)/%)
 
 default: build
@@ -33,4 +35,4 @@ $(STACKATO_STORE_BUILD):
 	mkdir -p $@
 
 clean purge:
-	rm -fr $(STACKATO_STORE_BUILD)
+	rm -fr build
