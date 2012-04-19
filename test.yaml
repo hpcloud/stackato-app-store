@@ -1,0 +1,8 @@
+- id: tor
+  name: Tor
+  desc: Tor Anonymity Network Server
+  framework: generic
+  license: BSD
+  mem: 128
+  repo: git://github.com/Cloud-Apps/tor.git
+  home: https://github.com/Cloud-Apps/tor/blob/master/README

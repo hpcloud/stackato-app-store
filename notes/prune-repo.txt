@@ -1,0 +1,30 @@
+== How to prune a samples directory into a new repo:
+
+    # Create repo: git@github.com:Cloud-Apps/node-env.git
+    git clone git@github.com:ActiveState/stackato-samples.git node-env
+    cd node-env/
+    git filter-branch --prune-empty --subdirectory-filter node/node-env master
+    git remote set-url origin git@github.com:Cloud-Apps/node-env.git
+    git push
+    ls -l
+    git branch -a
+
+== How I cloned and pruned a repo on a non-master branch
+
+    # Create repo: git@github.com:Cloud-Apps/drupal.git
+    git clone git@github.com:ActiveState/stackato-samples.git drupal
+    cd drupal/
+    git branch -a
+    git checkout develop
+    git filter-branch --prune-empty --subdirectory-filter php/drupal develop
+    git branch -d master
+    git checkout -b master
+    git remote set-url origin git@github.com:Cloud-Apps/drupal.git
+    git push origin master
+    cd ..
+    rm -fr drupal
+    git clone git@github.com:Cloud-Apps/drupal.git
+    cd drupal
+    ls -l
+    git branch -a
+

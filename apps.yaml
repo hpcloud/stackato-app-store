@@ -1,0 +1,138 @@
+store:
+  id: activestate_sample_apps
+  title: ActiveState Sample Stackato Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+
+apps:
+- id: bugzilla
+  name: Bugzilla
+  desc: A Bug Tracking System
+  framework: perl
+  license: Unknown
+  mem: 128
+  services:
+    mysql: mysql-bugzilla
+  repo: git://github.com/Cloud-Apps/bugzilla.git
+  home: https://github.com/Cloud-Apps/bugzilla#readme
+- id: currency
+  name: Currency Converter
+  desc: Bottle Currency Converter
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    redis: redis-currency
+  repo: git://github.com/Cloud-Apps/bottle-currency.git
+  home: https://github.com/Cloud-Apps/bottle-currency#readme
+- id: drupal
+  name: Drupal
+  desc: A Popular CMS
+  runtime: php
+  framework: php
+  license: Unknown
+  mem: 128
+  services:
+    mysql: mysql-drupal
+    filesystem: fs-drupal
+  repo: git://github.com/Cloud-Apps/drupal.git
+  home: https://github.com/Cloud-Apps/drupal#readme
+- id: env
+  name: Env
+  desc: Simple Sample App to Print Environment Variables
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/node-env.git
+  home: https://github.com/Cloud-Apps/node-env#readme
+- id: hello-clojure
+  name: Hello Clojure
+  desc: Hello World Sample App in Clojure
+  framework: clojure
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/hello-clojure.git
+  home: https://github.com/Cloud-Apps/hello-clojure#readme
+- id: live-game-editor
+  name: Live Game Editor
+  desc: Live Video Game Editor in Clojure
+  framework: clojure
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/live-game-editor.git
+  home: https://github.com/Cloud-Apps/live-game-editor#readme
+- id: mezzanine
+  name: Mezzanine
+  desc: Vanilla Mezzanine CMS
+  framework: python
+  license: Unknown
+  mem: 128
+  env:
+    DJANGO_SETTINGS_MODULE: settings
+  repo: git://github.com/Cloud-Apps/mezzanine.git
+  home: https://github.com/Cloud-Apps/mezzanine#readme
+- id: multisweeper
+  name: MultiSweeper
+  desc: A Multiplayer Minesweeper-style Game
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  services:
+    redis: redis-multisweeper
+  repo: git://github.com/Cloud-Apps/multisweeper.git
+  home: https://github.com/Cloud-Apps/multisweeper#readme
+- id: nide
+  name: Nide
+  desc:  Beautiful IDE for Node.JS
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  services:
+    filesystem: fs-nide
+  repo: git://github.com/Cloud-Apps/nide.git
+  home: https://github.com/Cloud-Apps/Nide#readme
+- id: perlcritic
+  name: Perl::Critic
+  desc: Perl::Critic Website
+  framework: perl
+  license: Unknown
+  mem: 128
+  repo: git://github.com/ActiveState/perlcritic.com.git
+  home: https://github.com/ActiveState/perlcritic.com#readme
+- id: photobooth
+  name: Photo Booth
+  desc: A Photo Booth App
+  framework: perl
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/photobooth.git
+  home: https://github.com/Cloud-Apps/photobooth#readme
+- id: prezbuzz
+  name: Prez Buzz
+  desc: Twitter Activity for the American 2012 Presidential Election
+  framework: rails3
+  runtime: ruby19
+  license: Unknown
+  mem: 256
+  services:
+    mysql: mysql-prezbuzz
+  repo: git://github.com/Cloud-Apps/prezbuzz.git
+  home: https://github.com/Cloud-Apps/prezbuzz#readme
+- id: subway
+  name: Subway
+  desc: A web based irc client, built on top of node.js and socket.io
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Cloud-Apps/subway.git
+  home: https://github.com/Cloud-Apps/subway#readme
+- id: tty-js
+  name: tty-js
+  desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Cloud-Apps/tty.js.git
+  home: https://github.com/Cloud-Apps/tty.js#readme

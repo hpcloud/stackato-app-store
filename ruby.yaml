@@ -1,0 +1,18 @@
+store:
+  title: ActiveState Sample Stackato Ruby Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icon: http://get.stackato.com/store/icon/ruby.png
+
+apps:
+- id: prezbuzz
+  name: Prez Buzz
+  desc: Twitter Activity for the American 2012 Presidential Election
+  framework: rails3
+  runtime: ruby19
+  license: Unknown
+  mem: 256
+  services:
+    mysql: mysql-prezbuzz
+  repo: git://github.com/Cloud-Apps/prezbuzz.git
+  home: https://github.com/Cloud-Apps/prezbuzz#readme
+

@@ -1,0 +1,54 @@
+store:
+  title: ActiveState Sample Stackato node.js Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icon: http://get.stackato.com/store/icon/node.png
+
+apps:
+- id: env
+  name: Env
+  desc: Simple Sample App to Print Environment Variables
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/node-env.git
+  home: https://github.com/Cloud-Apps/node-env#readme
+- id: multisweeper
+  name: MultiSweeper
+  desc: A Multiplayer Minesweeper-style Game
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  services:
+    redis: redis-multisweeper
+  repo: git://github.com/Cloud-Apps/multisweeper.git
+  home: https://github.com/Cloud-Apps/multisweeper#readme
+- id: nide
+  name: Nide
+  desc:  Beautiful IDE for Node.JS
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  services:
+    filesystem: fs-nide
+  repo: git://github.com/Cloud-Apps/nide.git
+  home: https://github.com/Cloud-Apps/Nide#readme
+- id: subway
+  name: Subway
+  desc: A web based irc client, built on top of node.js and socket.io
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Cloud-Apps/subway.git
+  home: https://github.com/Cloud-Apps/subway#readme
+- id: tty-js
+  name: tty-js
+  desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Cloud-Apps/tty.js.git
+  home: https://github.com/Cloud-Apps/tty.js#readme
+

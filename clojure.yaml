@@ -1,0 +1,23 @@
+store:
+  title: ActiveState Sample Stackato Clojure Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icon: http://get.stackato.com/store/icon/clojure.png
+
+apps:
+- id: hello-clojure
+  name: Hello Clojure
+  desc: Hello World Sample App in Clojure
+  framework: clojure
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/hello-clojure.git
+  home: https://github.com/Cloud-Apps/hello-clojure#readme
+- id: live-game-editor
+  name: Live Game Editor
+  desc: Live Video Game Editor in Clojure
+  framework: clojure
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Cloud-Apps/live-game-editor.git
+  home: https://github.com/Cloud-Apps/live-game-editor#readme
+

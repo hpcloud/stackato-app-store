@@ -1,0 +1,27 @@
+store:
+  title: ActiveState Sample Stackato Python Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icon: http://get.stackato.com/store/icon/python.png
+
+apps:
+- id: currency
+  name: Currency Converter
+  desc: Bottle Currency Converter
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    redis: redis-currency
+  repo: git://github.com/Cloud-Apps/bottle-currency.git
+  home: https://github.com/Cloud-Apps/bottle-currency#readme
+- id: mezzanine
+  name: Mezzanine
+  desc: Vanilla Mezzanine CMS
+  framework: python
+  license: Unknown
+  mem: 128
+  env:
+    DJANGO_SETTINGS_MODULE: settings
+  repo: git://github.com/Cloud-Apps/mezzanine.git
+  home: https://github.com/Cloud-Apps/mezzanine#readme
+
