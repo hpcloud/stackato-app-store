@@ -1,7 +1,8 @@
 store:
   title: New Stackato Apps in Development
   contact: Stackato Support <stackato-support@activestate.com>
-  icon: http://get.stackato.com/store/icon/development.png
+  icons: http://get.stackato.com/store/icon/
+  icon: development.png
 
 apps:
 - id: nide
@@ -13,6 +14,6 @@ apps:
   mem: 128
   services:
     filesystem: fs-nide
-  repo: git://github.com/Cloud-Apps/nide.git
-  home: https://github.com/Cloud-Apps/Nide#readme
+  repo: git://github.com/Stackato-Apps/nide.git
+  home: https://github.com/Stackato-Apps/Nide#readme
 

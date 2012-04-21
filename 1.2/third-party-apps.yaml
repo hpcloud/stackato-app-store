@@ -1,7 +1,8 @@
 store:
   title: Third Party Apps for Stackato
   contact: Stackato Support <stackato-support@activestate.com>
-  icon: http://get.stackato.com/store/icon/third-party.png
+  icons: http://get.stackato.com/store/icon/
+  icon: third-party.png
 
 apps:
 - id: bugzilla
@@ -12,8 +13,8 @@ apps:
   mem: 128
   services:
     mysql: mysql-bugzilla
-  repo: git://github.com/Cloud-Apps/bugzilla.git
-  home: https://github.com/Cloud-Apps/bugzilla#readme
+  repo: git://github.com/Stackato-Apps/bugzilla.git
+  home: https://github.com/Stackato-Apps/bugzilla#readme
 - id: drupal
   name: Drupal
   desc: A Popular CMS
@@ -24,5 +25,6 @@ apps:
   services:
     mysql: mysql-drupal
     filesystem: fs-drupal
-  repo: git://github.com/Cloud-Apps/drupal.git
-  home: https://github.com/Cloud-Apps/drupal#readme
+  repo: git://github.com/Stackato-Apps/drupal.git
+  home: https://github.com/Stackato-Apps/drupal#readme
+  icon: drupal.png
