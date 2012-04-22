@@ -1,0 +1,39 @@
+{
+   "apps" : [
+      {
+         "desc" : "A Bug Tracking System",
+         "framework" : "perl",
+         "home" : "https://github.com/Stackato-Apps/bugzilla#readme",
+         "id" : "bugzilla",
+         "license" : "Unknown",
+         "mem" : "128",
+         "name" : "Bugzilla",
+         "repo" : "git://github.com/Stackato-Apps/bugzilla.git",
+         "services" : {
+            "mysql" : "mysql-bugzilla"
+         }
+      },
+      {
+         "desc" : "A Popular CMS",
+         "framework" : "php",
+         "home" : "https://github.com/Stackato-Apps/drupal#readme",
+         "icon" : "drupal.png",
+         "id" : "drupal",
+         "license" : "Unknown",
+         "mem" : "128",
+         "name" : "Drupal",
+         "repo" : "git://github.com/Stackato-Apps/drupal.git",
+         "runtime" : "php",
+         "services" : {
+            "filesystem" : "fs-drupal",
+            "mysql" : "mysql-drupal"
+         }
+      }
+   ],
+   "store" : {
+      "contact" : "Stackato Support <stackato-support@activestate.com>",
+      "icon" : "third-party.png",
+      "icons" : "http://get.stackato.com/store/icon/",
+      "title" : "Third Party Apps for Stackato"
+   }
+}

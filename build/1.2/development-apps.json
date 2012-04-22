@@ -1,0 +1,24 @@
+{
+   "apps" : [
+      {
+         "desc" : "Beautiful IDE for Node.JS",
+         "framework" : "node",
+         "home" : "https://github.com/Stackato-Apps/Nide#readme",
+         "id" : "nide",
+         "license" : "Unknown",
+         "mem" : "128",
+         "name" : "Nide",
+         "repo" : "git://github.com/Stackato-Apps/nide.git",
+         "runtime" : "node",
+         "services" : {
+            "filesystem" : "fs-nide"
+         }
+      }
+   ],
+   "store" : {
+      "contact" : "Stackato Support <stackato-support@activestate.com>",
+      "icon" : "development.png",
+      "icons" : "http://get.stackato.com/store/icon/",
+      "title" : "New Stackato Apps in Development"
+   }
+}
