@@ -14,6 +14,8 @@ This document defines the model of this JSON structure. Annotated YAML is used:
       title: Human Friendly Title of This App Store
       contact: Email address of App Store Maintainer
       icon: URL of icon for the App Store to display in the SMC
+      icons: Base URL of directory for icons. If this exists, 'icon' can be
+        just a file name.
 
     # The fields used in each 'app' are all required:
     apps:
@@ -26,3 +28,5 @@ This document defines the model of this JSON structure. Annotated YAML is used:
       mem: Memory Requirements in MB
       repo: URL of git repo where the app code resides
       home: Web page (usually github page with #readme) of the doc for the app
+      icon: URL of icon for the App
+      services: An array of services matching what is specified in the stackato.yml

@@ -29,7 +29,7 @@ $(STACKATO_STORE_BUILD)/%.jsonp: $(STACKATO_STORE_SOURCE)/%.yaml Makefile
 	echo ');' >> $@
 
 $(STACKATO_STORE_BUILD)/%.json: $(STACKATO_STORE_SOURCE)/%.yaml Makefile
-	$(YAML2JSON) $< >> $@
+	$(YAML2JSON) $< > $@
 
 $(STACKATO_STORE_BUILD): 
 	mkdir -p $@
