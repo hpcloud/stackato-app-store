@@ -1,7 +1,7 @@
 store:
   title: ActiveState Sample Stackato Applications
   contact: Stackato Support <stackato-support@activestate.com>
-  icons: https://get.stackato.com/store/icon/
+  icons: http://get.stackato.com/store/icon/
   icon: activestate.png
 
 apps:
