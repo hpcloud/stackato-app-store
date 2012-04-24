@@ -1,14 +1,10 @@
 YAML2JSON := perl -MYAML::XS -MJSON::XS \
         -e 'print JSON::XS->new->pretty->canonical->encode(YAML::XS::LoadFile(shift))'
 
-ifndef STACKATO_STORE_VERSION
-    STACKATO_STORE_VERSION := 1.0
-endif
+STACKATO_STORE_VERSION ?= 1.0
 STACKATO_STORE_SOURCE := $(STACKATO_STORE_VERSION)
 
-ifndef STACKATO_STORE_BUILD
-    STACKATO_STORE_BUILD := build
-endif
+STACKATO_STORE_BUILD ?= build
 STACKATO_STORE_BUILD := $(STACKATO_STORE_BUILD:%=%/$(STACKATO_STORE_VERSION))
 
 ALL := $(shell cd $(STACKATO_STORE_SOURCE); echo *.yaml)
@@ -33,6 +29,14 @@ $(STACKATO_STORE_BUILD)/%.json: $(STACKATO_STORE_SOURCE)/%.yaml Makefile
 
 $(STACKATO_STORE_BUILD): 
 	mkdir -p $@
+
+pull:
+	git pull --rebase
+
+push:
+	git add .
+	git commit -m 'Update Stackato App Store Files'
+	git push
 
 clean purge:
 	rm -fr build
