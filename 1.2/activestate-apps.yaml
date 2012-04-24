@@ -3,6 +3,7 @@ store:
   contact: Stackato Support <stackato-support@activestate.com>
   icons: http://get.stackato.com/store/icon/
   icon: activestate.png
+  test: test
 
 apps:
 - id: hello-clojure
