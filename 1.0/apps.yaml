@@ -9,7 +9,7 @@ apps:
   desc: A Bug Tracking System
   framework: perl
   license: Unknown
-  mem: 128
+  mem: 256 
   services:
     mysql: mysql-bugzilla
   repo: git://github.com/Stackato-Apps/bugzilla.git
@@ -42,7 +42,7 @@ apps:
   runtime: node
   framework: node
   license: Unknown
-  mem: 128
+  mem: 32 
   repo: git://github.com/Stackato-Apps/node-env.git
   home: https://github.com/Stackato-Apps/node-env#readme
 - id: hello-clojure
@@ -50,7 +50,7 @@ apps:
   desc: Hello World Sample App in Clojure
   framework: clojure
   license: Unknown
-  mem: 128
+  mem: 256 
   repo: git://github.com/Stackato-Apps/hello-clojure.git
   home: https://github.com/Stackato-Apps/hello-clojure#readme
 - id: live-game-editor
@@ -58,7 +58,7 @@ apps:
   desc: Live Video Game Editor in Clojure
   framework: clojure
   license: Unknown
-  mem: 128
+  mem: 256 
   repo: git://github.com/Stackato-Apps/live-cljs.git
   home: https://github.com/Stackato-Apps/live-cljs#readme
 - id: mezzanine
@@ -67,6 +67,8 @@ apps:
   framework: python
   license: Unknown
   mem: 128
+  services:
+    postgresql: postgresql-mezzanine
   env:
     DJANGO_SETTINGS_MODULE: settings
   repo: git://github.com/Stackato-Apps/mezzanine.git

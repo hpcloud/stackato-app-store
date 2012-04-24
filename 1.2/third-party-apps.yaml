@@ -10,7 +10,7 @@ apps:
   desc: A Bug Tracking System
   framework: perl
   license: Unknown
-  mem: 128
+  mem: 256 
   services:
     mysql: mysql-bugzilla
   repo: git://github.com/Stackato-Apps/bugzilla.git
