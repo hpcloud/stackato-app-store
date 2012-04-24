@@ -31,6 +31,7 @@ $(STACKATO_STORE_BUILD):
 	mkdir -p $@
 
 pull:
+	git checkout master
 	git pull --rebase
 
 push:
