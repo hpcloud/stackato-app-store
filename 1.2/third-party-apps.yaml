@@ -14,7 +14,9 @@ apps:
   services:
     mysql: mysql-bugzilla
   repo: git://github.com/Stackato-Apps/bugzilla.git
+  branch: master
   home: https://github.com/Stackato-Apps/bugzilla#readme
+
 - id: drupal
   name: Drupal
   desc: A Popular CMS
@@ -26,5 +28,7 @@ apps:
     mysql: mysql-drupal
     filesystem: fs-drupal
   repo: git://github.com/Stackato-Apps/drupal.git
+  branch: master
   home: https://github.com/Stackato-Apps/drupal#readme
   icon: drupal.png
+

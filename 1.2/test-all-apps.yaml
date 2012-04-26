@@ -1,10 +1,22 @@
 store:
-  title: ActiveState Sample Stackato Applications
-  contact: Stackato Support <stackato-support@activestate.com>
+  title: App Store For Testing All Stackato-Apps Applications
+  contact: Ingy döt Net <ingy@activestate.com>
   icons: http://get.stackato.com/store/icon/
   icon: activestate.png
 
 apps:
+- id: bugzilla
+  name: Bugzilla
+  desc: A Bug Tracking System
+  framework: perl
+  license: Unknown
+  mem: 256 
+  services:
+    mysql: mysql-bugzilla
+  repo: git://github.com/Stackato-Apps/bugzilla.git
+  branch: master
+  home: https://github.com/Stackato-Apps/bugzilla#readme
+
 - id: currency
   name: Currency Converter
   desc: Bottle Currency Converter
@@ -16,6 +28,21 @@ apps:
   repo: git://github.com/Stackato-Apps/bottle-currency.git
   branch: master
   home: https://github.com/Stackato-Apps/bottle-currency#readme
+
+- id: drupal
+  name: Drupal
+  desc: A Popular CMS
+  runtime: php
+  framework: php
+  license: Unknown
+  mem: 128
+  services:
+    mysql: mysql-drupal
+    filesystem: fs-drupal
+  repo: git://github.com/Stackato-Apps/drupal.git
+  branch: master
+  home: https://github.com/Stackato-Apps/drupal#readme
+  icon: drupal.png
 
 - id: env
   name: Env
@@ -75,15 +102,28 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/multisweeper#readme
 
+- id: nide
+  name: Nide
+  desc:  Beautiful IDE for Node.JS
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 128
+  services:
+    filesystem: fs-nide
+  repo: git://github.com/Stackato-Apps/nide.git
+  branch: master
+  home: https://github.com/Stackato-Apps/Nide#readme
+
 - id: perlcritic
   name: Perl::Critic
   desc: Perl::Critic Website
   framework: perl
   license: Unknown
   mem: 128
-  repo: git://github.com/Stackato-Apps/perlcritic.com.git
+  repo: git://github.com/ActiveState/perlcritic.com.git
   branch: master
-  home: https://github.com/Stackato-Apps/perlcritic.com#readme
+  home: https://github.com/ActiveState/perlcritic.com#readme
 
 - id: photobooth
   name: Photo Booth
