@@ -9,7 +9,7 @@ apps:
   name: Bugzilla
   desc: A Bug Tracking System
   framework: perl
-  license: Unknown
+  license: MPL 
   mem: 256 
   services:
     mysql: mysql-bugzilla
@@ -22,7 +22,7 @@ apps:
   desc: A Popular CMS
   runtime: php
   framework: php
-  license: Unknown
+  license: GPLv2 
   mem: 128
   services:
     mysql: mysql-drupal
@@ -32,3 +32,16 @@ apps:
   home: https://github.com/Stackato-Apps/drupal#readme
   icon: drupal.png
 
+- id: owncloud
+  name: ownCloud
+  desc: A flexible, open source file sync and share solution
+  runtime: php
+  framework: php
+  license: AGPLv3
+  mem: 128
+  services:
+    mysql: mysql-owncloud
+    filesystem: fs-owncloud
+  repo: git://github.com/Stackato-Apps/owncloud.git
+  home: https://github.com/Stackato-Apps/owncloud#readme
+  icon: owncloud.png
