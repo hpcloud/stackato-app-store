@@ -15,6 +15,8 @@ else
 endif
 ALL := $(ALL:%=$(STACKATO_STORE_BUILD)/%)
 
+MESSAGE ?= "Update Stackato App Store Files"
+
 default: build
 build: $(STACKATO_STORE_BUILD) $(ALL)
 
@@ -36,7 +38,7 @@ pull:
 
 push:
 	git add .
-	git commit -m 'Update Stackato App Store Files'
+	git commit -m "$(MESSAGE)"
 	git push
 
 clean purge:

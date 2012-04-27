@@ -10,7 +10,7 @@ apps:
   desc:  Beautiful IDE for Node.JS
   runtime: node
   framework: node
-  license: Unknown
+  license: MIT
   mem: 128
   services:
     filesystem: fs-nide

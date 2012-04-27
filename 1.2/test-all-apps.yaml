@@ -58,7 +58,7 @@ apps:
 - id: hello-clojure
   name: Hello Clojure
   desc: Hello World Sample App in Clojure
-  framework: clojure
+  framework: buildpack
   license: Unknown
   mem: 256 
   repo: git://github.com/Stackato-Apps/hello-clojure.git
@@ -68,12 +68,12 @@ apps:
 - id: live-game-editor
   name: Live Game Editor
   desc: Live Video Game Editor in Clojure
-  framework: clojure
+  framework: buildpack
   license: Unknown
   mem: 256 
-  repo: git://github.com/Stackato-Apps/live-game-editor.git
+  repo: git://github.com/Stackato-Apps/live-cljs.git
   branch: master
-  home: https://github.com/Stackato-Apps/live-game-editor#readme
+  home: https://github.com/Stackato-Apps/live-cljs#readme
 
 - id: mezzanine
   name: Mezzanine

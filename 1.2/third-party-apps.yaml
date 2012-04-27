@@ -7,7 +7,7 @@ store:
 apps:
 - id: bugzilla
   name: Bugzilla
-  desc: A Bug Tracking System
+  desc: A bug tracking system for individuals or groups of developers
   framework: perl
   license: MPL 
   mem: 256 
@@ -19,7 +19,7 @@ apps:
 
 - id: drupal
   name: Drupal
-  desc: A Popular CMS
+  desc: A popular PHP content management system (CMS) which uses mysql and the persistent file system
   runtime: php
   framework: php
   license: GPLv2 
