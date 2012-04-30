@@ -15,7 +15,7 @@ else
 endif
 ALL := $(ALL:%=$(STACKATO_STORE_BUILD)/%)
 
-MESSAGE ?= "Update Stackato App Store Files"
+MESSAGE ?= Update Stackato App Store Files
 
 default: build
 build: $(STACKATO_STORE_BUILD) $(ALL)
