@@ -16,6 +16,7 @@ apps:
   repo: git://github.com/Stackato-Apps/bugzilla.git
   branch: master
   home: https://github.com/Stackato-Apps/bugzilla#readme
+  icon: bugzilla.png
 
 - id: drupal
   name: Drupal
