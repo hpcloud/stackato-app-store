@@ -182,3 +182,4 @@ apps:
   repo: git://github.com/Stackato-Apps/ace.git
   branch: master
   home: https://github.com/Stackato-Apps/ace#readme 
+  icon: ace-editor.png
