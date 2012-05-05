@@ -46,3 +46,31 @@ apps:
   repo: git://github.com/Stackato-Apps/owncloud.git
   home: https://github.com/Stackato-Apps/owncloud#readme
   icon: owncloud.png
+
+- id: pet-clinic
+  name: Pet Clinic
+  desc: Simulated pet clinic website in Java using Spring framework and MySQL service deployed using the buildpack framwork.  This takes a few minutes to start once installed as it does stage-time compilation.
+  framework: buildpack
+  license: Unknown
+  mem: 512
+  services:
+    mysql: mysql-spring
+  repo: git://github.com/Stackato-Apps/pet-clinic.git
+  branch: master
+  home: https://github.com/Stackato-Apps/pet-clinic#readme
+  icon: java.png
+
+- id: wordpress
+  name: WordPress
+  desc: WordPress is a very popular blogging platform
+  runtime: php
+  framework: php
+  license: GPLv2
+  mem: 128
+  services:
+    mysql: wp-mysql
+    filesystem: wp-filesystem
+  repo: git://github.com/Stackato-Apps/wordpress.git
+  branch: master
+  home: https://github.com/Stackato-Apps/wordpress#readme 
+  icon: wordpress.png

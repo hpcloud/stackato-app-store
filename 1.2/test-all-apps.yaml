@@ -187,40 +187,6 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/tty.js#readme
 
-- id: prezbuzz
-  name: Prez Buzz
-  desc: Twitter Activity for the US 2012 Presidential Election
-  framework: rails3
-  runtime: ruby19
-  license: Unknown
-  mem: 256
-  services:
-    mysql: mysql-prezbuzz
-  repo: git://github.com/Stackato-Apps/prezbuzz.git
-  branch: master
-  home: https://github.com/Stackato-Apps/prezbuzz#readme
-  icon: prezbuzz.png
-
-- id: subway
-  name: Subway
-  desc: A web based irc client, built on top of node.js and socket.io
-  framework: node
-  license: MIT
-  mem: 128
-  repo: git://github.com/Stackato-Apps/subway.git
-  branch: master
-  home: https://github.com/Stackato-Apps/subway#readme
-
-- id: tty-js
-  name: tty-js
-  desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
-  framework: node
-  license: MIT
-  mem: 128
-  repo: git://github.com/Stackato-Apps/tty.js.git
-  branch: master
-  home: https://github.com/Stackato-Apps/tty.js#readme
-
 - id: ace-editor
   name: ace-editor
   desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
@@ -249,7 +215,7 @@ apps:
 
 - id: pet-clinic
   name: Pet Clinic
-  desc: Java sample application using Spring framework and MySQL service deployed using the buildpack framwork
+  desc: Simulated pet clinic website in Java using Spring framework and MySQL service deployed using the buildpack framwork.  This takes a few minutes to start once installed as it does stage-time compilation.
   framework: buildpack
   license: Unknown
   mem: 512

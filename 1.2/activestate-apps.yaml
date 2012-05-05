@@ -111,4 +111,3 @@ apps:
   repo: git://github.com/Stackato-Apps/tty.js.git
   branch: master
   home: https://github.com/Stackato-Apps/tty.js#readme
-
