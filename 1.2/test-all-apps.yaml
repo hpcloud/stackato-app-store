@@ -1,15 +1,15 @@
 store:
   title: App Store For Testing All Stackato-Apps Applications
-  contact: Ingy döt Net <ingy@activestate.com>
+  contact: Stackato Support <stackato-support@activestate.com>
   icons: http://get.stackato.com/store/icon/
   icon: activestate.png
 
 apps:
 - id: bugzilla
   name: Bugzilla
-  desc: A Bug Tracking System
+  desc: A bug tracking system for individuals or groups of developers
   framework: perl
-  license: Unknown
+  license: MPL 
   mem: 256 
   services:
     mysql: mysql-bugzilla
@@ -20,7 +20,7 @@ apps:
 
 - id: currency
   name: Currency Converter
-  desc: Bottle Currency Converter
+  desc: Currency converter using Python bottle framework
   framework: python
   license: Unknown
   mem: 128
@@ -33,10 +33,10 @@ apps:
 
 - id: drupal
   name: Drupal
-  desc: A Popular CMS
+  desc: A popular PHP content management system which uses mysql and the persistent file system
   runtime: php
   framework: php
-  license: Unknown
+  license: GPLv2 
   mem: 128
   services:
     mysql: mysql-drupal
@@ -48,7 +48,7 @@ apps:
 
 - id: env
   name: Env
-  desc: Simple Sample App to Print Environment Variables
+  desc: Simple node.js sample application that prints server environment variables
   runtime: node
   framework: node
   license: Unknown
@@ -59,10 +59,10 @@ apps:
 
 - id: hello-clojure
   name: Hello Clojure
-  desc: Hello World Sample App in Clojure
+  desc: Hello World sample app in Clojure using Stackato buildpack framework
   framework: buildpack
   license: Unknown
-  mem: 256 
+  mem: 512
   repo: git://github.com/Stackato-Apps/hello-clojure.git
   branch: master
   home: https://github.com/Stackato-Apps/hello-clojure#readme
@@ -70,10 +70,10 @@ apps:
 
 - id: live-game-editor
   name: Live Game Editor
-  desc: Live Video Game Editor in Clojure
+  desc: Live video game editor in Clojure
   framework: buildpack
   license: Unknown
-  mem: 256 
+  mem: 512
   repo: git://github.com/Stackato-Apps/live-cljs.git
   branch: master
   home: https://github.com/Stackato-Apps/live-cljs#readme
@@ -81,7 +81,7 @@ apps:
 
 - id: mezzanine
   name: Mezzanine
-  desc: Vanilla Mezzanine CMS
+  desc: Vanilla Mezzanine Django-based CMS
   framework: python
   license: Unknown
   mem: 128
@@ -95,11 +95,11 @@ apps:
 
 - id: multisweeper
   name: MultiSweeper
-  desc: A Multiplayer Minesweeper-style Game
+  desc: A multiplayer minesweeper-style game
   runtime: node
   framework: node
   license: Unknown
-  mem: 128
+  mem: 96
   services:
     redis: redis-multisweeper
   repo: git://github.com/Stackato-Apps/multisweeper.git
@@ -119,6 +119,20 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/Nide#readme
 
+- id: owncloud
+  name: ownCloud
+  desc: A flexible, open source file sync and share solution
+  runtime: php
+  framework: php
+  license: AGPLv3
+  mem: 128
+  services:
+    mysql: mysql-owncloud
+    filesystem: fs-owncloud
+  repo: git://github.com/Stackato-Apps/owncloud.git
+  home: https://github.com/Stackato-Apps/owncloud#readme
+  icon: owncloud.png
+
 - id: perlcritic
   name: Perl::Critic
   desc: Perl::Critic Website
@@ -131,7 +145,7 @@ apps:
 
 - id: photobooth
   name: Photo Booth
-  desc: A Photo Booth App
+  desc: A photobooth application. Requires working webcam, stores pictures locally.
   framework: perl
   license: Unknown
   mem: 128
@@ -141,7 +155,41 @@ apps:
 
 - id: prezbuzz
   name: Prez Buzz
-  desc: Twitter Activity for the American 2012 Presidential Election
+  desc: Twitter activity for the US 2012 presidential election
+  framework: rails3
+  runtime: ruby19
+  license: Unknown
+  mem: 256
+  services:
+    mysql: mysql-prezbuzz
+  repo: git://github.com/Stackato-Apps/prezbuzz.git
+  branch: master
+  home: https://github.com/Stackato-Apps/prezbuzz#readme
+  icon: prezbuzz.png
+
+- id: subway
+  name: Subway
+  desc: A web based irc client, built on top of node.js and socket.io
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Stackato-Apps/subway.git
+  branch: master
+  home: https://github.com/Stackato-Apps/subway#readme
+
+- id: tty-js
+  name: tty-js
+  desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Stackato-Apps/tty.js.git
+  branch: master
+  home: https://github.com/Stackato-Apps/tty.js#readme
+
+- id: prezbuzz
+  name: Prez Buzz
+  desc: Twitter Activity for the US 2012 Presidential Election
   framework: rails3
   runtime: ruby19
   license: Unknown
@@ -183,3 +231,31 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/ace#readme 
   icon: ace-editor.png
+
+- id: wordpress
+  name: WordPress
+  desc: WordPress is a very popular blogging platform
+  runtime: php
+  framework: php
+  license: GPLv2
+  mem: 128
+  services:
+    mysql: wp-mysql
+    filesystem: wp-filesystem
+  repo: git://github.com/Stackato-Apps/wordpress.git
+  branch: master
+  home: https://github.com/Stackato-Apps/wordpress#readme 
+  icon: wordpress.png
+
+- id: pet-clinic
+  name: Pet Clinic
+  desc: Java sample application using Spring framework and MySQL service deployed using the buildpack framwork
+  framework: buildpack
+  license: Unknown
+  mem: 512
+  services:
+    mysql: mysql-spring
+  repo: git://github.com/Stackato-Apps/pet-clinic.git
+  branch: master
+  home: https://github.com/Stackato-Apps/pet-clinic#readme
+  icon: java.png

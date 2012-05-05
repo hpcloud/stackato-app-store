@@ -7,7 +7,7 @@ store:
 apps:
 - id: currency
   name: Currency Converter
-  desc: Currency Converter using Python bottle framework
+  desc: Currency converter using Python bottle framework
   framework: python
   license: Unknown
   mem: 128
@@ -20,7 +20,7 @@ apps:
 
 - id: env
   name: Env
-  desc: Simple sample application that prints server environment variables
+  desc: Simple node.js sample application that prints server environment variables
   runtime: node
   framework: node
   license: Unknown
@@ -42,7 +42,7 @@ apps:
 
 - id: live-game-editor
   name: Live Game Editor
-  desc: Live Video Game Editor in Clojure
+  desc: Live video game editor in Clojure
   framework: buildpack
   license: Unknown
   mem: 512
@@ -53,7 +53,7 @@ apps:
 
 - id: mezzanine
   name: Mezzanine
-  desc: Vanilla Mezzanine CMS
+  desc: Vanilla Mezzanine Django-based CMS
   framework: python
   license: Unknown
   mem: 128
@@ -77,16 +77,6 @@ apps:
   repo: git://github.com/Stackato-Apps/multisweeper.git
   branch: master
   home: https://github.com/Stackato-Apps/multisweeper#readme
-
-- id: photobooth
-  name: Photo Booth
-  desc: A photobooth application. Requires working webcam, stores pictures locally.
-  framework: perl
-  license: Unknown
-  mem: 128
-  repo: git://github.com/Stackato-Apps/photobooth.git
-  branch: master
-  home: https://github.com/Stackato-Apps/photobooth#readme
 
 - id: prezbuzz
   name: Prez Buzz
