@@ -198,6 +198,16 @@ apps:
   home: https://github.com/Stackato-Apps/ace#readme 
   icon: ace-editor.png
 
+- id: repl-it
+  name: Repl.it
+  desc: An online environment for interactively exploring programming languages, based on jsREPL
+  framework: node
+  license: MPL
+  mem: 256
+  repo: git://github.com/Stackato-Apps/repl.it.git
+  branch: master
+  home: https://github.com/Stackato-Apps/repl.it 
+
 - id: wordpress
   name: WordPress
   desc: WordPress is a very popular blogging platform
