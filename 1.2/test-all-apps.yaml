@@ -139,9 +139,9 @@ apps:
   framework: perl
   license: Unknown
   mem: 128
-  repo: git://github.com/ActiveState/perlcritic.com.git
+  repo: git://github.com/Stackato-Apps/perlcritic.com.git
   branch: master
-  home: https://github.com/ActiveState/perlcritic.com#readme
+  home: https://github.com/Stackato-Apps/perlcritic.com#readme
 
 - id: photobooth
   name: Photo Booth
