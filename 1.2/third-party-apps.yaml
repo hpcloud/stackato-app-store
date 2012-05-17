@@ -47,6 +47,16 @@ apps:
   home: https://github.com/Stackato-Apps/owncloud#readme
   icon: owncloud.png
 
+- id: perlcritic
+  name: Perl::Critic
+  desc: Perl::Critic Website
+  framework: perl
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Stackato-Apps/perlcritic.com.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/perlcritic.com#readme
+
 - id: pet-clinic
   name: Pet Clinic
   desc: Simulated pet clinic website in Java using Spring framework and MySQL service deployed using the buildpack framwork.  This takes a few minutes to start once installed as it does stage-time compilation.
@@ -59,6 +69,16 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/pet-clinic#readme
   icon: java.png
+
+- id: photobooth
+  name: Photo Booth
+  desc: A photobooth application. Requires working webcam, stores pictures locally.
+  framework: perl
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Stackato-Apps/photobooth.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/photobooth#readme
 
 - id: wordpress
   name: WordPress
