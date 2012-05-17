@@ -140,7 +140,7 @@ apps:
   license: Unknown
   mem: 128
   repo: git://github.com/Stackato-Apps/perlcritic.com.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/perlcritic.com#readme
 
 - id: photobooth
@@ -150,7 +150,7 @@ apps:
   license: Unknown
   mem: 128
   repo: git://github.com/Stackato-Apps/photobooth.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/photobooth#readme
 
 - id: prezbuzz
