@@ -91,6 +91,6 @@ apps:
     mysql: wp-mysql
     filesystem: wp-filesystem
   repo: git://github.com/Stackato-Apps/wordpress.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/wordpress#readme 
   icon: wordpress.png
