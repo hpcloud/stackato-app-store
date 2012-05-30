@@ -24,18 +24,18 @@ apps:
     redis: redis-currency
   repo: git://github.com/Stackato-Apps-1-0/bottle-currency.git
   home: https://github.com/Stackato-Apps-1-0/bottle-currency#readme
-- id: drupal
-  name: Drupal
-  desc: A Popular CMS
-  runtime: php
-  framework: php
-  license: Unknown
-  mem: 128
-  services:
-    mysql: mysql-drupal
-    filesystem: fs-drupal
-  repo: git://github.com/Stackato-Apps-1-0/drupal.git
-  home: https://github.com/Stackato-Apps-1-0/drupal#readme
+# - id: drupal
+#   name: Drupal
+#   desc: A Popular CMS
+#   runtime: php
+#   framework: php
+#   license: Unknown
+#   mem: 128
+#   services:
+#     mysql: mysql-drupal
+#     filesystem: fs-drupal
+#   repo: git://github.com/Stackato-Apps-1-0/drupal.git
+#   home: https://github.com/Stackato-Apps-1-0/drupal#readme
 - id: env
   name: Env
   desc: Simple Sample App to Print Environment Variables
