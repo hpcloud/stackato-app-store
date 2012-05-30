@@ -12,8 +12,8 @@ apps:
   mem: 256 
   services:
     mysql: mysql-bugzilla
-  repo: git://github.com/Stackato-Apps-1-0/bugzilla.git
-  home: https://github.com/Stackato-Apps-1-0/bugzilla#readme
+  repo: git://github.com/Stackato-Apps/bugzilla.git
+  home: https://github.com/Stackato-Apps/bugzilla#readme
 - id: currency
   name: Currency Converter
   desc: Bottle Currency Converter
@@ -22,8 +22,8 @@ apps:
   mem: 128
   services:
     redis: redis-currency
-  repo: git://github.com/Stackato-Apps-1-0/bottle-currency.git
-  home: https://github.com/Stackato-Apps-1-0/bottle-currency#readme
+  repo: git://github.com/Stackato-Apps/bottle-currency.git
+  home: https://github.com/Stackato-Apps/bottle-currency#readme
 - id: drupal
   name: Drupal
   desc: A Popular CMS
@@ -34,8 +34,8 @@ apps:
   services:
     mysql: mysql-drupal
     filesystem: fs-drupal
-  repo: git://github.com/Stackato-Apps-1-0/drupal.git
-  home: https://github.com/Stackato-Apps-1-0/drupal#readme
+  repo: git://github.com/Stackato-Apps/drupal.git
+  home: https://github.com/Stackato-Apps/drupal#readme
 - id: env
   name: Env
   desc: Simple Sample App to Print Environment Variables
@@ -43,24 +43,24 @@ apps:
   framework: node
   license: Unknown
   mem: 32 
-  repo: git://github.com/Stackato-Apps-1-0/node-env.git
-  home: https://github.com/Stackato-Apps-1-0/node-env#readme
+  repo: git://github.com/Stackato-Apps/node-env.git
+  home: https://github.com/Stackato-Apps/node-env#readme
 - id: hello-clojure
   name: Hello Clojure
   desc: Hello World Sample App in Clojure
   framework: clojure
   license: Unknown
   mem: 256 
-  repo: git://github.com/Stackato-Apps-1-0/hello-clojure.git
-  home: https://github.com/Stackato-Apps-1-0/hello-clojure#readme
+  repo: git://github.com/Stackato-Apps/hello-clojure.git
+  home: https://github.com/Stackato-Apps/hello-clojure#readme
 - id: live-game-editor
   name: Live Game Editor
   desc: Live Video Game Editor in Clojure
   framework: clojure
   license: Unknown
   mem: 256 
-  repo: git://github.com/Stackato-Apps-1-0/live-cljs.git
-  home: https://github.com/Stackato-Apps-1-0/live-cljs#readme
+  repo: git://github.com/Stackato-Apps/live-cljs.git
+  home: https://github.com/Stackato-Apps/live-cljs#readme
 - id: mezzanine
   name: Mezzanine
   desc: Vanilla Mezzanine CMS
@@ -71,8 +71,8 @@ apps:
     postgresql: postgresql-mezzanine
   env:
     DJANGO_SETTINGS_MODULE: settings
-  repo: git://github.com/Stackato-Apps-1-0/mezzanine.git
-  home: https://github.com/Stackato-Apps-1-0/mezzanine#readme
+  repo: git://github.com/Stackato-Apps/mezzanine.git
+  home: https://github.com/Stackato-Apps/mezzanine#readme
 - id: multisweeper
   name: MultiSweeper
   desc: A Multiplayer Minesweeper-style Game
@@ -82,8 +82,8 @@ apps:
   mem: 128
   services:
     redis: redis-multisweeper
-  repo: git://github.com/Stackato-Apps-1-0/multisweeper.git
-  home: https://github.com/Stackato-Apps-1-0/multisweeper#readme
+  repo: git://github.com/Stackato-Apps/multisweeper.git
+  home: https://github.com/Stackato-Apps/multisweeper#readme
 - id: nide
   name: Nide
   desc:  Beautiful IDE for Node.JS
@@ -93,24 +93,24 @@ apps:
   mem: 128
   services:
     filesystem: fs-nide
-  repo: git://github.com/Stackato-Apps-1-0/nide.git
-  home: https://github.com/Stackato-Apps-1-0/Nide#readme
+  repo: git://github.com/Stackato-Apps/nide.git
+  home: https://github.com/Stackato-Apps/Nide#readme
 - id: perlcritic
   name: Perl::Critic
   desc: Perl::Critic Website
   framework: perl
   license: Unknown
   mem: 128
-  repo: git://github.com/Stackato-Apps-1-0/perlcritic.com.git
-  home: https://github.com/Stackato-Apps-1-0/perlcritic.com#readme
+  repo: git://github.com/ActiveState/perlcritic.com.git
+  home: https://github.com/ActiveState/perlcritic.com#readme
 - id: photobooth
   name: Photo Booth
   desc: A Photo Booth App
   framework: perl
   license: Unknown
   mem: 128
-  repo: git://github.com/Stackato-Apps-1-0/photobooth.git
-  home: https://github.com/Stackato-Apps-1-0/photobooth#readme
+  repo: git://github.com/Stackato-Apps/photobooth.git
+  home: https://github.com/Stackato-Apps/photobooth#readme
 - id: prezbuzz
   name: Prez Buzz
   desc: Twitter Activity for the American 2012 Presidential Election
@@ -120,21 +120,21 @@ apps:
   mem: 256
   services:
     mysql: mysql-prezbuzz
-  repo: git://github.com/Stackato-Apps-1-0/prezbuzz.git
-  home: https://github.com/Stackato-Apps-1-0/prezbuzz#readme
+  repo: git://github.com/Stackato-Apps/prezbuzz.git
+  home: https://github.com/Stackato-Apps/prezbuzz#readme
 - id: subway
   name: Subway
   desc: A web based irc client, built on top of node.js and socket.io
   framework: node
   license: MIT
   mem: 128
-  repo: git://github.com/Stackato-Apps-1-0/subway.git
-  home: https://github.com/Stackato-Apps-1-0/subway#readme
+  repo: git://github.com/Stackato-Apps/subway.git
+  home: https://github.com/Stackato-Apps/subway#readme
 - id: tty-js
   name: tty-js
   desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
   framework: node
   license: MIT
   mem: 128
-  repo: git://github.com/Stackato-Apps-1-0/tty.js.git
-  home: https://github.com/Stackato-Apps-1-0/tty.js#readme
+  repo: git://github.com/Stackato-Apps/tty.js.git
+  home: https://github.com/Stackato-Apps/tty.js#readme
