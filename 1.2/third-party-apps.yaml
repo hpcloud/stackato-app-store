@@ -33,6 +33,19 @@ apps:
   home: https://github.com/Stackato-Apps/drupal#readme
   icon: drupal.png
 
+- id: fedwiki
+  name: Smallest Federated Wiki
+  desc: A Very Futuristic Wiki by the inventor of Wiki himself
+  runtime: node
+  framework: node
+  license: GPL/MIT
+  mem: 128
+  services:
+    filesystem: fedwiki-fs
+  repo: git://github.com/Stackato-Apps/Smallest-Federated-Wiki.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
+
 - id: owncloud
   name: ownCloud
   desc: A flexible, open source file sync and share solution
