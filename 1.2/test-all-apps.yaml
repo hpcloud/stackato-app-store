@@ -4,190 +4,6 @@ store:
   icons: http://get.stackato.com/store/icon/
   icon: activestate.png
 
-apps:
-- id: bugzilla
-  name: Bugzilla
-  desc: A bug tracking system for individuals or groups of developers
-  framework: perl
-  license: MPL 
-  mem: 256 
-  services:
-    mysql: mysql-bugzilla
-  repo: git://github.com/Stackato-Apps/bugzilla.git
-  branch: master
-  home: https://github.com/Stackato-Apps/bugzilla#readme
-  icon: bugzilla.png
-
-- id: currency
-  name: Currency Converter
-  desc: Currency converter using Python bottle framework
-  framework: python
-  license: Unknown
-  mem: 128
-  services:
-    redis: redis-currency
-  repo: git://github.com/Stackato-Apps/bottle-currency.git
-  branch: master
-  home: https://github.com/Stackato-Apps/bottle-currency#readme
-  icon: currency.png
-
-- id: drupal
-  name: Drupal
-  desc: A popular PHP content management system which uses mysql and the persistent file system
-  runtime: php
-  framework: php
-  license: GPLv2 
-  mem: 128
-  services:
-    mysql: mysql-drupal
-    filesystem: fs-drupal
-  repo: git://github.com/Stackato-Apps/drupal.git
-  branch: master
-  home: https://github.com/Stackato-Apps/drupal#readme
-  icon: drupal.png
-
-- id: env
-  name: Env
-  desc: Simple node.js sample application that prints server environment variables
-  runtime: node
-  framework: node
-  license: Unknown
-  mem: 32 
-  repo: git://github.com/Stackato-Apps/node-env.git
-  branch: master
-  home: https://github.com/Stackato-Apps/node-env#readme
-
-- id: hello-clojure
-  name: Hello Clojure
-  desc: Hello World sample app in Clojure using Stackato buildpack framework
-  framework: buildpack
-  license: Unknown
-  mem: 512
-  repo: git://github.com/Stackato-Apps/hello-clojure.git
-  branch: master
-  home: https://github.com/Stackato-Apps/hello-clojure#readme
-  icon: clojure.png
-
-- id: live-game-editor
-  name: Live Game Editor
-  desc: Live video game editor in Clojure
-  framework: buildpack
-  license: Unknown
-  mem: 512
-  repo: git://github.com/Stackato-Apps/live-cljs.git
-  branch: master
-  home: https://github.com/Stackato-Apps/live-cljs#readme
-  icon: clojure.png
-
-- id: mezzanine
-  name: Mezzanine
-  desc: Vanilla Mezzanine Django-based CMS
-  framework: python
-  license: Unknown
-  mem: 128
-  services:
-    postgresql: postgresql-mezzanine
-  env:
-    DJANGO_SETTINGS_MODULE: settings
-  repo: git://github.com/Stackato-Apps/mezzanine.git
-  branch: master
-  home: https://github.com/Stackato-Apps/mezzanine#readme
-
-- id: multisweeper
-  name: MultiSweeper
-  desc: A multiplayer minesweeper-style game
-  runtime: node
-  framework: node
-  license: Unknown
-  mem: 96
-  services:
-    redis: redis-multisweeper
-  repo: git://github.com/Stackato-Apps/multisweeper.git
-  branch: master
-  home: https://github.com/Stackato-Apps/multisweeper#readme
-
-- id: nide
-  name: Nide
-  desc:  Beautiful IDE for Node.JS
-  runtime: node
-  framework: node
-  license: Unknown
-  mem: 128
-  services:
-    filesystem: fs-nide
-  repo: git://github.com/Stackato-Apps/nide.git
-  branch: master
-  home: https://github.com/Stackato-Apps/Nide#readme
-
-- id: owncloud
-  name: ownCloud
-  desc: A flexible, open source file sync and share solution
-  runtime: php
-  framework: php
-  license: AGPLv3
-  mem: 128
-  services:
-    mysql: mysql-owncloud
-    filesystem: fs-owncloud
-  repo: git://github.com/Stackato-Apps/owncloud.git
-  home: https://github.com/Stackato-Apps/owncloud#readme
-  icon: owncloud.png
-
-- id: perlcritic
-  name: Perl::Critic
-  desc: Perl::Critic Website
-  framework: perl
-  license: Unknown
-  mem: 128
-  repo: git://github.com/Stackato-Apps/perlcritic.com.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/perlcritic.com#readme
-
-- id: photobooth
-  name: Photo Booth
-  desc: A photobooth application. Requires working webcam, stores pictures locally.
-  framework: perl
-  license: Unknown
-  mem: 128
-  repo: git://github.com/Stackato-Apps/photobooth.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/photobooth#readme
-
-- id: prezbuzz
-  name: Prez Buzz
-  desc: Twitter activity for the US 2012 presidential election
-  framework: rails3
-  runtime: ruby19
-  license: Unknown
-  mem: 256
-  services:
-    mysql: mysql-prezbuzz
-  repo: git://github.com/Stackato-Apps/prezbuzz.git
-  branch: master
-  home: https://github.com/Stackato-Apps/prezbuzz#readme
-  icon: prezbuzz.png
-
-- id: subway
-  name: Subway
-  desc: A web based irc client, built on top of node.js and socket.io
-  framework: node
-  license: MIT
-  mem: 128
-  repo: git://github.com/Stackato-Apps/subway.git
-  branch: master
-  home: https://github.com/Stackato-Apps/subway#readme
-
-- id: tty-js
-  name: tty-js
-  desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
-  framework: node
-  license: MIT
-  mem: 128
-  repo: git://github.com/Stackato-Apps/tty.js.git
-  branch: master
-  home: https://github.com/Stackato-Apps/tty.js#readme
-
-- id: ace-editor
   name: ace-editor
   desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
   framework: node
@@ -207,31 +23,31 @@ apps:
   repo: git://github.com/Stackato-Apps/repl.it.git
   branch: master
   home: https://github.com/Stackato-Apps/repl.it 
+  icon: replit.png
+ 
+- id: kandan
+  name: Kandan
+  desc: Kandan is a team chat application that supports file uploads, multiple rooms, shared music playing per-room, image/youtube embeds, and is extremely extensible.
+  framework: buildpack
+  license: AGPL
+  mem: 256
+  services:
+    postgresql: pg-kandan
+    filesystem: fs-kandan
+  repo: git://github.com/Stackato-Apps/kandan.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/kandan#readme
+  icon: kandan.png
 
-- id: wordpress
-  name: WordPress
-  desc: WordPress is a very popular blogging platform
-  runtime: php
+- id: joomla
+  name: Joomla
+  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model–view–controller (MVC) Web application framework that can also be used independently.
   framework: php
   license: GPLv2
   mem: 128
   services:
-    mysql: wp-mysql
-    filesystem: wp-filesystem
-  repo: git://github.com/Stackato-Apps/wordpress.git
-  branch: master
-  home: https://github.com/Stackato-Apps/wordpress#readme 
-  icon: wordpress.png
-
-- id: pet-clinic
-  name: Pet Clinic
-  desc: Simulated pet clinic website in Java using Spring framework and MySQL service deployed using the buildpack framwork.  This takes a few minutes to start once installed as it does stage-time compilation.
-  framework: buildpack
-  license: Unknown
-  mem: 512
-  services:
-    mysql: mysql-spring
-  repo: git://github.com/Stackato-Apps/pet-clinic.git
-  branch: master
-  home: https://github.com/Stackato-Apps/pet-clinic#readme
-  icon: java.png
+    mysql: mysql-joomla
+  repo: git://github.com/Stackato-Apps/joomla-cms.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/joomla-cms#readme
+  icon: joomla.png
