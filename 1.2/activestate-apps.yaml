@@ -40,6 +40,19 @@ apps:
   home: https://github.com/Stackato-Apps/hello-clojure#readme
   icon: clojure.png
 
+- id: pairup
+  name: PairUp!
+  desc: Pair Programming Station for Stackato
+  framework: generic
+  license: MPL
+  mem: 512
+  services:
+    filesystem: pairup
+  repo: git://github.com/Stackato-Apps/pairup.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/pairup#readme
+  icon: pairup.png
+
 - id: prezbuzz
   name: Prez Buzz
   desc: Twitter activity for the US 2012 presidential election
