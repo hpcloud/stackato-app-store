@@ -1,3 +1,4 @@
+# do you see any non ascii chars? nop
 store:
   title: App Store For Testing All Stackato-Apps Applications
   contact: Stackato Support <stackato-support@activestate.com>
@@ -32,7 +33,7 @@ apps:
 
 - id: joomla
   name: Joomla (no FS)
-  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model–view–controller (MVC) Web application framework that can also be used independently.
+  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
   framework: php
   license: GPLv2
   mem: 128
