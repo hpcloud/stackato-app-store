@@ -40,7 +40,7 @@ store:
   icon: kandan.png
 
 - id: joomla
-  name: Joomla
+  name: Joomla (no FS)
   desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model–view–controller (MVC) Web application framework that can also be used independently.
   framework: php
   license: GPLv2
