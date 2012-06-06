@@ -44,7 +44,6 @@ apps:
   name: PairUp!
   desc: Pair Programming Station for Stackato
   framework: generic
-  runtime: generic
   license: MPL
   mem: 512
   services:
