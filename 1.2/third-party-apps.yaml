@@ -53,7 +53,7 @@ apps:
   license: EPL
   mem: 512
   repo: git://github.com/Stackato-Apps/live-cljs.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/live-cljs#readme
   icon: clojure.png
 
@@ -82,7 +82,7 @@ apps:
   services:                                                             
     redis: redis-multisweeper                                                   
   repo: git://github.com/Stackato-Apps/multisweeper.git                         
-  branch: master                                                                
+  branch: stackato                                                                
   home: https://github.com/Stackato-Apps/multisweeper#readme
   icon: multisweeper.png
 
@@ -120,7 +120,7 @@ apps:
   services:
     mysql: mysql-spring
   repo: git://github.com/Stackato-Apps/pet-clinic.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/pet-clinic#readme
   icon: pet-clinic.png
 
@@ -152,7 +152,7 @@ apps:
   license: MIT                                                                  
   mem: 128                                                                      
   repo: git://github.com/Stackato-Apps/tty.js.git                               
-  branch: master                                                                
+  branch: stackato                                                               
   home: https://github.com/Stackato-Apps/tty.js#readme                          
   icon: ttyjs.png 
 

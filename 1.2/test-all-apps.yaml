@@ -1,4 +1,3 @@
-# do you see any non ascii chars? nop
 store:
   title: App Store For Testing All Stackato-Apps Applications
   contact: Stackato Support <stackato-support@activestate.com>
@@ -12,10 +11,49 @@ apps:
   framework: node
   license: MPL
   mem: 128
-  repo: git://github.com/Stackato-Apps/ace.git
-  branch: master
+  repo: --depth 1 git://github.com/Stackato-Apps/ace.git
+  branch: stackato
   home: https://github.com/Stackato-Apps/ace#readme 
   icon: ace-editor.png
+
+- id: etherpad-lite
+  name: Etherpad Lite
+  desc: Collaborate on documents in really real-time.
+  framework: node
+  license: EPL
+  mem: 64
+  services:
+    mysql: mysql-etherpad
+  repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/joomla-cms#readme
+  icon: etherpad.png
+
+- id: jaspersoft
+  name: Jaspersoft BI Suite (4GB Memory Required)
+  desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
+  framework: java
+  license: N/A
+  mem: 4096
+  services:
+    mysql: jrs-repo
+  repo: git://github.com/Stackato-Apps/jaspersoft.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/jaspersoft#README
+  icon: jaspersoft.png
+
+- id: joomla
+  name: Joomla (no FS)
+  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
+  framework: php
+  license: GPLv2
+  mem: 128
+  services:
+    mysql: mysql-joomla
+  repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/joomla-cms#readme
+  icon: joomla.png
 
 - id: kandan
   name: Kandan
@@ -26,23 +64,22 @@ apps:
   services:
     postgresql: pg-kandan
     filesystem: fs-kandan
-  repo: git://github.com/Stackato-Apps/kandan.git
+  repo: --depth 1 git://github.com/Stackato-Apps/kandan.git
   branch: stackato
   home: https://github.com/Stackato-Apps/kandan#readme
   icon: kandan.png
 
-- id: joomla
-  name: Joomla (no FS)
-  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
-  framework: php
-  license: GPLv2
+- id: osqa
+  name: OSQA
+  desc: The Open Source Q&A System.
+  framework: python
+  license: GPL
   mem: 128
   services:
-    mysql: mysql-joomla
-  repo: git://github.com/Stackato-Apps/joomla-cms.git
+    mysql: mysql-osqa
+  repo: --depth 1 git://github.com/Stackato-Apps/OSQA.git
   branch: stackato
-  home: https://github.com/Stackato-Apps/joomla-cms#readme
-  icon: joomla.png
+  home: https://github.com/Stackato-Apps/OSQA#readme
 
 - id: repl-it
   name: Repl.it
@@ -50,8 +87,7 @@ apps:
   framework: node
   license: MPL
   mem: 256
-  repo: git://github.com/Stackato-Apps/repl.it.git
-  branch: master
+  repo: --depth 1 git://github.com/Stackato-Apps/repl.it.git
+  branch: stackato
   home: https://github.com/Stackato-Apps/repl.it 
   icon: replit.png
- 
