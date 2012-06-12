@@ -34,7 +34,7 @@ apps:
   desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
   framework: java
   license: N/A
-  mem: 4096
+  mem: 3072
   services:
     mysql: jrs-repo
   repo: git://github.com/Stackato-Apps/jaspersoft.git
