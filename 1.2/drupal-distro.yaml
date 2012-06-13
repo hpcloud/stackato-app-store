@@ -48,4 +48,4 @@ apps:
   repo: git://github.com/Stackato-Apps/drupal-pressflow.git
   branch: stackato
   home: https://github.com/Stackato-Apps/drupal-pressflow#readme
-  icon: pressflow.png
+  icon: drupal.png
