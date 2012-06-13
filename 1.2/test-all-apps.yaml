@@ -24,9 +24,9 @@ apps:
   mem: 64
   services:
     mysql: mysql-etherpad
-  repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
+  repo: --depth 1 git://github.com/Stackato-Apps/etherpad-lite.git
   branch: stackato
-  home: https://github.com/Stackato-Apps/joomla-cms#readme
+  home: https://github.com/Stackato-Apps/etherpad-lite#readme
   icon: etherpad.png
 
 - id: jaspersoft
