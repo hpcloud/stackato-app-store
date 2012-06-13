@@ -12,7 +12,7 @@ apps:
   license: Unknown
   mem: 128
   services:
-    redis-currency: redis
+    redis: redis-currency
   repo: git://github.com/Stackato-Apps/bottle-currency.git
   branch: master
   home: https://github.com/Stackato-Apps/bottle-currency#readme
@@ -47,7 +47,7 @@ apps:
   license: MPL
   mem: 512
   services:
-    pairup: filesystem
+    filesystem: pairup
   repo: git://github.com/Stackato-Apps/pairup.git
   branch: stackato
   home: https://github.com/Stackato-Apps/pairup#readme
@@ -61,7 +61,7 @@ apps:
   license: Unknown
   mem: 256
   services:
-    mysql-prezbuzz: mysql
+    mysql: mysql-prezbuzz
   repo: git://github.com/Stackato-Apps/prezbuzz.git
   branch: master
   home: https://github.com/Stackato-Apps/prezbuzz#readme

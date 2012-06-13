@@ -12,7 +12,7 @@ apps:
   license: MPL 
   mem: 256 
   services:
-    mysql-bugzilla: mysql
+    mysql: mysql-bugzilla
   repo: git://github.com/Stackato-Apps/bugzilla.git
   branch: master
   home: https://github.com/Stackato-Apps/bugzilla#readme
@@ -26,8 +26,8 @@ apps:
   license: GPLv2 
   mem: 128
   services:
-    mysql-drupal: mysql
-    fs-drupal: filesystem
+    mysql: mysql-drupal
+    filesystem: fs-drupal
   repo: git://github.com/Stackato-Apps/drupal.git
   branch: master
   home: https://github.com/Stackato-Apps/drupal#readme
@@ -41,7 +41,7 @@ apps:
   license: GPL/MIT
   mem: 128
   services:
-    fedwiki-fs: filesystem
+    filesystem: fedwiki-fs
   repo: git://github.com/Stackato-Apps/Smallest-Federated-Wiki.git
   branch: stackato
   home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
@@ -64,7 +64,7 @@ apps:
   license: Unknown
   mem: 128
   services:
-    postgresql-mezzanine: postgresql
+    postgresql: postgresql-mezzanine
   env:
     DJANGO_SETTINGS_MODULE: settings
   repo: git://github.com/Stackato-Apps/mezzanine.git
@@ -80,7 +80,7 @@ apps:
   license: Unknown                                                              
   mem: 96                                                                       
   services:                                                             
-    redis-multisweeper: redis                                                   
+    redis: redis-multisweeper                                                   
   repo: git://github.com/Stackato-Apps/multisweeper.git                         
   branch: stackato                                                                
   home: https://github.com/Stackato-Apps/multisweeper#readme
@@ -94,8 +94,8 @@ apps:
   license: AGPLv3
   mem: 128
   services:
-    mysql-owncloud: mysql
-    fs-owncloud: filesystem
+    mysql: mysql-owncloud
+    filesystem: fs-owncloud
   repo: git://github.com/Stackato-Apps/owncloud.git
   home: https://github.com/Stackato-Apps/owncloud#readme
   icon: owncloud.png
@@ -118,7 +118,7 @@ apps:
   license: Unknown
   mem: 512
   services:
-    mysql-spring: mysql
+    mysql: mysql-spring
   repo: git://github.com/Stackato-Apps/pet-clinic.git
   branch: stackato
   home: https://github.com/Stackato-Apps/pet-clinic#readme
@@ -152,7 +152,7 @@ apps:
   license: MIT                                                                  
   mem: 128                                                                      
   repo: git://github.com/Stackato-Apps/tty.js.git                               
-  branch: stackato
+  branch: stackato                                                               
   home: https://github.com/Stackato-Apps/tty.js#readme                          
   icon: ttyjs.png 
 
@@ -164,8 +164,8 @@ apps:
   license: GPLv2
   mem: 128
   services:
-    wp-mysql: mysql
-    wp-filesystem: filesystem
+    mysql: wp-mysql
+    filesystem: wp-filesystem
   repo: git://github.com/Stackato-Apps/wordpress.git
   branch: stackato
   home: https://github.com/Stackato-Apps/wordpress#readme 

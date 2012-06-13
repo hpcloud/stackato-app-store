@@ -13,8 +13,8 @@ apps:
   license: GPLv2 
   mem: 128
   services:
-    mysql-drupal: mysql
-    fs-drupal: filesystem
+    mysql: mysql-drupal
+    filesystem: fs-drupal
   repo: git://github.com/Stackato-Apps/drupal.git
   branch: master
   home: https://github.com/Stackato-Apps/drupal#readme
@@ -28,8 +28,8 @@ apps:
   license: GPLv2 
   mem: 128
   services:
-    mysql-drupal-ck: mysql
-    fs-drupal-ck: filesystem
+    mysql: mysql-drupal-ck
+    filesystem: fs-drupal-ck
   repo: git://github.com/Stackato-Apps/drupal.git
   branch: commerce_kickstart
   home: https://github.com/Stackato-Apps/drupal#readme
@@ -43,8 +43,8 @@ apps:
   license: GPLv2 
   mem: 128
   services:
-    mysql-drupal-pf: mysql
-    fs-drupal-pf: filesystem
+    mysql: mysql-drupal-pressflow
+    filesystem: fs-drupal-pressflow
   repo: git://github.com/Stackato-Apps/drupal-pressflow.git
   branch: stackato
   home: https://github.com/Stackato-Apps/drupal-pressflow#readme

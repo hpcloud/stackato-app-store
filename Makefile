@@ -1,7 +1,7 @@
 YAML2JSON := perl -MYAML::XS -MJSON::XS \
         -e 'print JSON::XS->new->pretty->canonical->encode(YAML::XS::LoadFile(shift))'
 
-STACKATO_STORE_VERSION ?= 1.2
+STACKATO_STORE_VERSION ?= 1.0
 STACKATO_STORE_SOURCE := $(STACKATO_STORE_VERSION)
 
 STACKATO_STORE_BUILD ?= build
