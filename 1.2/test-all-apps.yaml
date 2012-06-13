@@ -23,7 +23,7 @@ apps:
   license: EPL
   mem: 64
   services:
-    mysql: mysql-etherpad
+    mysql-etherpad: mysql
   repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
   branch: stackato
   home: https://github.com/Stackato-Apps/joomla-cms#readme
@@ -36,7 +36,7 @@ apps:
   license: N/A
   mem: 3072
   services:
-    mysql: jrs-repo
+    jrs-repo: mysql
   repo: git://github.com/Stackato-Apps/jaspersoft.git
   branch: stackato
   home: https://github.com/Stackato-Apps/jaspersoft#README
@@ -49,7 +49,7 @@ apps:
   license: GPLv2
   mem: 128
   services:
-    mysql: mysql-joomla
+    mysql-joomla: mysql
   repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
   branch: stackato
   home: https://github.com/Stackato-Apps/joomla-cms#readme
@@ -62,8 +62,8 @@ apps:
   license: AGPL
   mem: 256
   services:
-    postgresql: pg-kandan
-    filesystem: fs-kandan
+    pg-kandan: postgresql
+    fs-kandan: filesystem
   repo: --depth 1 git://github.com/Stackato-Apps/kandan.git
   branch: stackato
   home: https://github.com/Stackato-Apps/kandan#readme
@@ -76,7 +76,7 @@ apps:
   license: GPL
   mem: 128
   services:
-    mysql: mysql-osqa
+    mysql-osqa: mysql
   repo: --depth 1 git://github.com/Stackato-Apps/OSQA.git
   branch: stackato
   home: https://github.com/Stackato-Apps/OSQA#readme
