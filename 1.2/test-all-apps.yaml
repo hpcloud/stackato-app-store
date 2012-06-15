@@ -30,7 +30,7 @@ apps:
   icon: etherpad.png
 
 - id: jaspersoft
-  name: Jaspersoft BI Suite (4GB Memory Required)
+  name: Jaspersoft BI Suite
   desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
   framework: java
   license: N/A
@@ -42,8 +42,21 @@ apps:
   home: https://github.com/Stackato-Apps/jaspersoft#README
   icon: jaspersoft.png
 
+- id: jaspersoft2
+  name: Jaspersoft BI Suite
+  desc: N/A
+  framework: java
+  license: N/A
+  mem: 3072
+  services:
+    mysql: jrs-repo
+  repo: git://github.com/Stackato-Apps/jaspersoft.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/jaspersoft#README
+  icon: jaspersoft.png
+
 - id: joomla
-  name: Joomla (no FS)
+  name: Joomla
   desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
   framework: php
   license: GPLv2
