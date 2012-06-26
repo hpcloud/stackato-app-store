@@ -86,6 +86,20 @@ apps:
   home: https://github.com/Stackato-Apps/multisweeper#readme
   icon: multisweeper.png
 
+- id: nide
+  name: Nide
+  desc:  Beautiful IDE for Node.JS
+  runtime: node
+  framework: node
+  license: MIT
+  mem: 128
+  services:
+    filesystem: fs-nide
+  repo: git://github.com/Stackato-Apps/nide.git
+  branch: master
+  home: https://github.com/Stackato-Apps/Nide#readme
+  icon: nide.png
+
 - id: owncloud
   name: ownCloud
   desc: A flexible, open source file sync and share solution
