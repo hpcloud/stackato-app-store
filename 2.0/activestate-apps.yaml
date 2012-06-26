@@ -1,0 +1,68 @@
+store:
+  title: ActiveState Stackato Sample Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icons: http://get.stackato.com/store/icon/
+  icon: activestate.png
+
+apps:
+- id: currency
+  name: Currency Converter
+  desc: Currency converter using Python bottle framework
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    redis: redis-currency
+  repo: git://github.com/Stackato-Apps/bottle-currency.git
+  branch: master
+  home: https://github.com/Stackato-Apps/bottle-currency#readme
+  icon: currency.png
+
+- id: env
+  name: Env
+  desc: Simple node.js sample application that prints server environment variables
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 32 
+  repo: git://github.com/Stackato-Apps/node-env.git
+  branch: master
+  home: https://github.com/Stackato-Apps/node-env#readme
+
+- id: hello-clojure
+  name: Hello Clojure
+  desc: Hello World sample app in Clojure using Stackato buildpack framework
+  framework: buildpack
+  license: Unknown
+  mem: 512
+  repo: git://github.com/Stackato-Apps/hello-clojure.git
+  branch: master
+  home: https://github.com/Stackato-Apps/hello-clojure#readme
+  icon: clojure.png
+
+- id: pairup
+  name: PairUp!
+  desc: Pair Programming Station for Stackato
+  framework: generic
+  license: MPL
+  mem: 512
+  services:
+    filesystem: pairup
+  repo: git://github.com/Stackato-Apps/pairup.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/pairup#readme
+  icon: pairup.png
+
+- id: prezbuzz
+  name: Prez Buzz
+  desc: Twitter activity for the US 2012 presidential election
+  framework: rails3
+  runtime: ruby19
+  license: Unknown
+  mem: 256
+  services:
+    mysql: mysql-prezbuzz
+  repo: git://github.com/Stackato-Apps/prezbuzz.git
+  branch: master
+  home: https://github.com/Stackato-Apps/prezbuzz#readme
+  icon: prezbuzz.png

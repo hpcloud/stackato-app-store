@@ -80,9 +80,9 @@ apps:
   license: Unknown                                                              
   mem: 96                                                                       
   services:                                                             
-    redis: redis-multisweeper
+    redis: redis-multisweeper                                                   
   repo: git://github.com/Stackato-Apps/multisweeper.git                         
-  branch: stackato-1.2
+  branch: stackato                                                                
   home: https://github.com/Stackato-Apps/multisweeper#readme
   icon: multisweeper.png
 
@@ -141,7 +141,7 @@ apps:
   license: MIT                                                                  
   mem: 128                                                                      
   repo: git://github.com/Stackato-Apps/subway.git                               
-  branch: stackato                                                                
+  branch: master                                                                
   home: https://github.com/Stackato-Apps/subway#readme                          
   icon: subway.png   
 

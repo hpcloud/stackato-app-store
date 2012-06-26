@@ -1,0 +1,93 @@
+store:
+  title: App Store For Testing All Stackato-Apps Applications
+  contact: Stackato Support <stackato-support@activestate.com>
+  icons: http://get.stackato.com/store/icon/
+  icon: activestate.png
+
+apps:
+- id: ace-editor
+  name: Ace Editor
+  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
+  framework: node
+  license: MPL
+  mem: 128
+  repo: --depth 1 git://github.com/Stackato-Apps/ace.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/ace#readme 
+  icon: ace-editor.png
+
+- id: etherpad-lite
+  name: Etherpad Lite
+  desc: Collaborate on documents in really real-time.
+  framework: node
+  license: EPL
+  mem: 64
+  services:
+    mysql: mysql-etherpad
+  repo: --depth 1 git://github.com/Stackato-Apps/etherpad-lite.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/etherpad-lite#readme
+  icon: etherpad.png
+
+- id: jaspersoft
+  name: Jaspersoft BI Suite
+  desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
+  framework: java_web
+  license: N/A
+  mem: 3072
+  services:
+    mysql: jrs-repo
+  repo: git://github.com/Stackato-Apps/jaspersoft.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/jaspersoft#README
+  icon: jaspersoft.png
+
+- id: joomla
+  name: Joomla
+  desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
+  framework: php
+  license: GPLv2
+  mem: 128
+  services:
+    mysql: mysql-joomla
+  repo: --depth 1 git://github.com/Stackato-Apps/joomla-cms.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/joomla-cms#readme
+  icon: joomla.png
+
+- id: kandan
+  name: Kandan
+  desc: Kandan is a team chat application that supports file uploads, multiple rooms, shared music playing per-room, image/youtube embeds, and is extremely extensible.
+  framework: buildpack
+  license: AGPL
+  mem: 256
+  services:
+    postgresql: pg-kandan
+    filesystem: fs-kandan
+  repo: --depth 1 git://github.com/Stackato-Apps/kandan.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/kandan#readme
+  icon: kandan.png
+
+- id: osqa
+  name: OSQA
+  desc: The Open Source Q&A System.
+  framework: python
+  license: GPL
+  mem: 128
+  services:
+    mysql: mysql-osqa
+  repo: --depth 1 git://github.com/Stackato-Apps/OSQA.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/OSQA#readme
+
+- id: repl-it
+  name: Repl.it
+  desc: An online environment for interactively exploring programming languages, based on jsREPL
+  framework: node
+  license: MPL
+  mem: 256
+  repo: --depth 1 git://github.com/Stackato-Apps/repl.it.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/repl.it 
+  icon: replit.png

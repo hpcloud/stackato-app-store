@@ -1,0 +1,51 @@
+store:
+  title: Drupal Distributions for Stackato
+  contact: Stackato Support <stackato-support@activestate.com>
+  icons: http://get.stackato.com/store/icon/
+  icon: third-party.png
+
+apps:
+- id: drupal
+  name: Drupal Core
+  desc: A popular PHP content management system which uses mysql and the persistent file system
+  runtime: php
+  framework: php
+  license: GPLv2 
+  mem: 128
+  services:
+    mysql: mysql-drupal
+    filesystem: fs-drupal
+  repo: git://github.com/Stackato-Apps/drupal.git
+  branch: master
+  home: https://github.com/Stackato-Apps/drupal#readme
+  icon: drupal.png
+
+- id: drupal-ck
+  name: Drupal Commerce Kickstart
+  desc: Commerce Kickstart is the quickest way to get you up and running with Drupal Commerce.
+  runtime: php
+  framework: php
+  license: GPLv2 
+  mem: 128
+  services:
+    mysql: mysql-drupal-ck
+    filesystem: fs-drupal-ck
+  repo: git://github.com/Stackato-Apps/drupal.git
+  branch: commerce_kickstart
+  home: https://github.com/Stackato-Apps/drupal#readme
+  icon: drupal.png
+
+- id: drupal-pressflow
+  name: Drupal Pressflow
+  desc: A popular PHP content management system which uses mysql and the persistent file system
+  runtime: php
+  framework: php
+  license: GPLv2 
+  mem: 128
+  services:
+    mysql: mysql-drupal-pressflow
+    filesystem: fs-drupal-pressflow
+  repo: git://github.com/Stackato-Apps/drupal-pressflow.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/drupal-pressflow#readme
+  icon: drupal.png
