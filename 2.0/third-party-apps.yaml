@@ -141,7 +141,7 @@ apps:
   license: MIT                                                                  
   mem: 128                                                                      
   repo: git://github.com/Stackato-Apps/subway.git                               
-  branch: master                                                                
+  branch: stackato                                                                
   home: https://github.com/Stackato-Apps/subway#readme                          
   icon: subway.png   
 
