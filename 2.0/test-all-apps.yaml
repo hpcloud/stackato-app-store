@@ -11,7 +11,7 @@ apps:
   framework: node
   license: MPL
   mem: 128
-  repo: --depth 1 git://github.com/Stackato-Apps/ace.git
+  repo: git://github.com/Stackato-Apps/ace.git
   branch: stackato
   home: https://github.com/Stackato-Apps/ace#readme 
   icon: ace-editor.png
@@ -37,7 +37,7 @@ apps:
   mem: 64
   services:
     mysql: mysql-etherpad
-  repo: --depth 1 git://github.com/Stackato-Apps/etherpad-lite.git
+  repo: git://github.com/Stackato-Apps/etherpad-lite.git
   branch: stackato
   home: https://github.com/Stackato-Apps/etherpad-lite#readme
   icon: etherpad.png
@@ -77,7 +77,7 @@ apps:
   services:
     postgresql: pg-kandan
     filesystem: fs-kandan
-  repo: --depth 1 git://github.com/Stackato-Apps/kandan.git
+  repo: git://github.com/Stackato-Apps/kandan.git
   branch: stackato
   home: https://github.com/Stackato-Apps/kandan#readme
   icon: kandan.png
@@ -90,7 +90,7 @@ apps:
   mem: 128
   services:
     mysql: mysql-osqa
-  repo: --depth 1 git://github.com/Stackato-Apps/OSQA.git
+  repo: git://github.com/Stackato-Apps/OSQA.git
   branch: stackato
   home: https://github.com/Stackato-Apps/OSQA#readme
 
@@ -100,7 +100,7 @@ apps:
   framework: node
   license: MPL
   mem: 256
-  repo: --depth 1 git://github.com/Stackato-Apps/repl.it.git
+  repo: git://github.com/Stackato-Apps/repl.it.git
   branch: stackato
   home: https://github.com/Stackato-Apps/repl.it 
   icon: replit.png
