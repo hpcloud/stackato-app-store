@@ -6,7 +6,7 @@ store:
 
 apps:
 - id: drupal
-  name: Drupal Core
+  name: Drupal
   desc: A popular PHP content management system which uses mysql and the persistent file system
   runtime: php
   framework: php

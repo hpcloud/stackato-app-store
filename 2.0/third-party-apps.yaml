@@ -18,20 +18,6 @@ apps:
   home: https://github.com/Stackato-Apps/bugzilla#readme
   icon: bugzilla.png
 
-- id: drupal
-  name: Drupal
-  desc: A popular PHP content management system which uses mysql and the persistent file system
-  runtime: php
-  framework: php
-  license: GPLv2 
-  mem: 128
-  services:
-    mysql: mysql-drupal
-    filesystem: fs-drupal
-  repo: git://github.com/Stackato-Apps/drupal.git
-  branch: master
-  home: https://github.com/Stackato-Apps/drupal#readme
-  icon: drupal.png
 
 - id: fedwiki
   name: Smallest Federated Wiki
