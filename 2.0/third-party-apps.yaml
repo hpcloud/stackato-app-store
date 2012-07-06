@@ -111,6 +111,19 @@ apps:
   home: https://github.com/Stackato-Apps/perlcritic.com#readme
   icon: perl-critic.png
 
+- id: pet-catalog
+  name: Pet Catalog
+  desc: Simulated pet catalog website in JavaEE framework and MySQL service. This is a full JEE6 sample with JSF2.0, EJB3.1 and JPA2.0.
+  framework: java_ee
+  license: Unknown
+  mem: 512
+  services:
+    mysql: catalog
+  repo: git://github.com/Stackato-Apps/pet-clinic.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/pet-catalog#readme
+  icon: pet-catalog.png
+
 - id: pet-clinic
   name: Pet Clinic
   desc: Simulated pet clinic website in Java using Spring framework and MySQL service deployed using the buildpack framwork.  This takes a few minutes to start once installed as it does stage-time compilation.
