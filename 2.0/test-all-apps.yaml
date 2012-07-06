@@ -5,17 +5,6 @@ store:
   icon: activestate.png
 
 apps:
-- id: ace-editor
-  name: Ace Editor
-  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
-  framework: node
-  license: MPL
-  mem: 128
-  repo: git://github.com/Stackato-Apps/ace.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/ace#readme 
-  icon: ace-editor.png
-
 - id: django-gtd
   name: Django GTD
   desc: N/A
@@ -28,19 +17,19 @@ apps:
   repo: git://github.com/Stackato-Apps/django-gtd.git
   branch: master
   home: https://github.com/Stackato-Apps/django-gtd#README
-
-- id: etherpad-lite
-  name: Etherpad Lite
-  desc: Collaborate on documents in really real-time.
+  
+- id: fedwiki
+  name: Smallest Federated Wiki
+  desc: A Very Futuristic Wiki by the inventor of Wiki himself
+  runtime: node
   framework: node
-  license: EPL
-  mem: 64
+  license: GPL/MIT
+  mem: 128
   services:
-    mysql: mysql-etherpad
-  repo: git://github.com/Stackato-Apps/etherpad-lite.git
+    filesystem: fedwiki-fs
+  repo: git://github.com/Stackato-Apps/Smallest-Federated-Wiki.git
   branch: stackato
-  home: https://github.com/Stackato-Apps/etherpad-lite#readme
-  icon: etherpad.png
+  home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
 
 - id: jaspersoft
   name: Jaspersoft BI Suite
@@ -81,6 +70,32 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/kandan#readme
   icon: kandan.png
+
+- id: live-game-editor
+  name: Live Game Editor
+  desc: Live video game editor in Clojure
+  framework: buildpack
+  license: EPL
+  mem: 512
+  repo: git://github.com/Stackato-Apps/live-cljs.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/live-cljs#readme
+  icon: clojure.png
+
+- id: mezzanine
+  name: Mezzanine
+  desc: Vanilla Mezzanine Django-based CMS
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    postgresql: postgresql-mezzanine
+  env:
+    DJANGO_SETTINGS_MODULE: settings
+  repo: git://github.com/Stackato-Apps/mezzanine.git
+  branch: master
+  home: https://github.com/Stackato-Apps/mezzanine#readme
+  icon: mezzanine.png  
 
 - id: osqa
   name: OSQA
