@@ -119,7 +119,7 @@ apps:
   mem: 512
   services:
     mysql: catalog
-  repo: git://github.com/Stackato-Apps/pet-clinic.git
+  repo: git://github.com/Stackato-Apps/pet-catalog.git
   branch: stackato
   home: https://github.com/Stackato-Apps/pet-catalog#readme
   icon: pet-catalog.png
