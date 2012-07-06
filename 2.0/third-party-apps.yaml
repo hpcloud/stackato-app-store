@@ -120,7 +120,7 @@ apps:
   services:
     mysql: catalog
   repo: git://github.com/Stackato-Apps/pet-catalog.git
-  branch: stackato
+  branch: stackato-store
   home: https://github.com/Stackato-Apps/pet-catalog#readme
   icon: pet-catalog.png
 
