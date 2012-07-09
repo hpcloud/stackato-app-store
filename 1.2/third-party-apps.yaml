@@ -44,6 +44,21 @@ apps:
   home: https://github.com/Stackato-Apps/live-cljs#readme
   icon: clojure.png
 
+- id: mezzanine
+  name: Mezzanine
+  desc: Vanilla Mezzanine Django-based CMS
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    postgresql: postgresql-mezzanine
+  env:
+    DJANGO_SETTINGS_MODULE: settings
+  repo: git://github.com/Stackato-Apps/mezzanine.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/mezzanine#readme
+  icon: mezzanine.png
+
 - id: multisweeper                                                              
   name: MultiSweeper                                                            
   desc: A multiplayer minesweeper-style game                                    

@@ -5,17 +5,6 @@ store:
   icon: third-party.png
 
 apps:
-- id: ace-editor
-  name: Ace Editor
-  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
-  framework: node
-  license: MPL
-  mem: 128
-  repo: git://github.com/Stackato-Apps/ace.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/ace#readme 
-  icon: ace-editor.png
-  
 - id: bugzilla
   name: Bugzilla
   desc: A bug tracking system for individuals or groups of developers
@@ -41,6 +30,21 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/etherpad-lite#readme
   icon: etherpad.png
+
+- id: mezzanine
+  name: Mezzanine
+  desc: Vanilla Mezzanine Django-based CMS
+  framework: python
+  license: Unknown
+  mem: 128
+  services:
+    postgresql: postgresql-mezzanine
+  env:
+    DJANGO_SETTINGS_MODULE: settings
+  repo: git://github.com/Stackato-Apps/mezzanine.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/mezzanine#readme
+  icon: mezzanine.png
 
 - id: multisweeper                                                              
   name: MultiSweeper                                                            

@@ -5,6 +5,17 @@ store:
   icon: activestate.png
 
 apps:
+- id: ace-editor
+  name: Ace Editor
+  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
+  framework: node
+  license: MPL
+  mem: 128
+  repo: git://github.com/Stackato-Apps/ace.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/ace#readme 
+  icon: ace-editor.png
+
 - id: django-gtd
   name: Django GTD
   desc: N/A
@@ -80,22 +91,19 @@ apps:
   repo: git://github.com/Stackato-Apps/live-cljs.git
   branch: stackato
   home: https://github.com/Stackato-Apps/live-cljs#readme
-  icon: clojure.png
+  icon: clojure.png  
 
-- id: mezzanine
-  name: Mezzanine
-  desc: Vanilla Mezzanine Django-based CMS
+- id: moin
+  name: MoinMoin Wiki
+  desc: MoinMoin is an advanced, easy to use and extensible WikiEngine with a large community of users. Said in a few words, it is about collaboration on easily editable web pages.
   framework: python
-  license: Unknown
+  license: GPL
   mem: 128
   services:
-    postgresql: postgresql-mezzanine
-  env:
-    DJANGO_SETTINGS_MODULE: settings
-  repo: git://github.com/Stackato-Apps/mezzanine.git
+    filesystem: fs-moin
+  repo: git://github.com/Stackato-Apps/moin.git
   branch: master
-  home: https://github.com/Stackato-Apps/mezzanine#readme
-  icon: mezzanine.png  
+  home: https://github.com/Stackato-Apps/moin#README
 
 - id: osqa
   name: OSQA
