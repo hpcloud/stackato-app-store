@@ -117,6 +117,19 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/OSQA#readme
 
+- id: pet-catalog
+  name: Pet Catalog
+  desc: Simulated pet catalog website in JavaEE framework and MySQL service. This is a full JEE6 sample with JSF2.0, EJB3.1 and JPA2.0.
+  framework: java_ee
+  license: Unknown
+  mem: 512
+  services:
+    mysql: catalog
+  repo: git://github.com/Stackato-Apps/pet-catalog.git
+  branch: stackato-store
+  home: https://github.com/Stackato-Apps/pet-catalog#readme
+  icon: pet-catalog.png
+
 - id: repl-it
   name: Repl.it
   desc: An online environment for interactively exploring programming languages, based on jsREPL
@@ -127,3 +140,14 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/repl.it 
   icon: replit.png
+
+- id: subway                                                                    
+  name: Subway                                                                  
+  desc: A web based irc client, built on top of node.js and socket.io           
+  framework: node                                                               
+  license: MIT                                                                  
+  mem: 128                                                                      
+  repo: git://github.com/Stackato-Apps/subway.git                               
+  branch: stackato                                                                
+  home: https://github.com/Stackato-Apps/subway#readme                          
+  icon: subway.png 
