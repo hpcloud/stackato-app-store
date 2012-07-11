@@ -5,6 +5,17 @@ store:
   icon: third-party.png
 
 apps:
+- id: ace-editor
+  name: Ace Editor
+  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
+  framework: node
+  license: MPL
+  mem: 128
+  repo: git://github.com/Stackato-Apps/ace.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/ace#readme 
+  icon: ace-editor.png
+
 - id: bugzilla
   name: Bugzilla
   desc: A bug tracking system for individuals or groups of developers
@@ -122,6 +133,19 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/photobooth#readme
   icon: photobooth.png  
+
+- id: pinax-social
+  name: Pinax Social
+  desc: Pinax is an open-source platform built on the Django Web Framework. It provides numerous reusable Django apps, starter projects and infrastructure tools. pinax-social, a social networking site, is its "kitchen sink" demo demonstrating many of Pinax's features.
+  framework: python
+  license: N/A
+  mem: 128
+  services:
+    mysql: mysql-pinax
+  repo: git://github.com/Stackato-Apps/pinax-social.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/pinax-social#README
+  icon: pinax.png
 
 - id: tty-js                                                                    
   name: tty-js                                                                  

@@ -5,17 +5,6 @@ store:
   icon: activestate.png
 
 apps:
-- id: ace-editor
-  name: Ace Editor
-  desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
-  framework: node
-  license: MPL
-  mem: 128
-  repo: git://github.com/Stackato-Apps/ace.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/ace#readme 
-  icon: ace-editor.png
-
 - id: django-gtd
   name: Django GTD
   desc: N/A
@@ -56,6 +45,17 @@ apps:
   repo: git://github.com/Stackato-Apps/Smallest-Federated-Wiki.git
   branch: stackato
   home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
+
+- id: hastebin
+  name: Hastebin
+  desc: Haste is an open-source pastebin software written in node.js, which is easily installable in any network.
+  framework: node
+  license: MIT
+  mem: 128
+  repo: git://github.com/Stackato-Apps/haste-server.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/haste-server#readme
+  icon: hastebin.png
 
 - id: jaspersoft
   name: Jaspersoft BI Suite
@@ -119,6 +119,17 @@ apps:
   repo: git://github.com/Stackato-Apps/moin.git
   branch: master
   home: https://github.com/Stackato-Apps/moin#README
+
+- id: node-chat
+  name: Node Chat
+  desc: A simple chat application in Node.js with no other dependencies. Originally written by Ryan Dahl, the creator of Node.js.
+  runtime: node
+  framework: node
+  license: Unknown
+  mem: 64
+  repo: git://github.com/Stackato-Apps/node-chat.git
+  branch: master
+  home: https://github.com/Stackato-Apps/node-chat#readme
 
 - id: osqa
   name: OSQA
