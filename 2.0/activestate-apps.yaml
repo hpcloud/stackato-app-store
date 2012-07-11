@@ -53,6 +53,17 @@ apps:
   home: https://github.com/Stackato-Apps/pairup#readme
   icon: pairup.png
 
+- id: phpinfo
+  name: PHP Info
+  desc: Executes the phpinfo() function.
+  framework: php
+  license: N/A
+  mem: 128
+  repo: git://github.com/Stackato-Apps/phpinfo.git
+  branch: master
+  home: https://github.com/Stackato-Apps/phpinfo#readme
+  icon: php.png
+
 - id: prezbuzz
   name: Prez Buzz
   desc: Twitter activity for the US 2012 presidential election
