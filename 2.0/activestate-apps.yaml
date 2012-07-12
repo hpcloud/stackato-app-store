@@ -8,6 +8,7 @@ apps:
 - id: currency
   name: Currency Converter
   desc: Currency converter using Python bottle framework
+  runtime: python27
   framework: python
   license: Unknown
   mem: 128
@@ -29,17 +30,6 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/node-env#readme
 
-- id: hello-clojure
-  name: Hello Clojure
-  desc: Hello World sample app in Clojure using Stackato buildpack framework
-  framework: buildpack
-  license: Unknown
-  mem: 512
-  repo: git://github.com/Stackato-Apps/hello-clojure.git
-  branch: master
-  home: https://github.com/Stackato-Apps/hello-clojure#readme
-  icon: clojure.png
-
 - id: pairup
   name: PairUp!
   desc: Pair Programming Station for Stackato
@@ -58,7 +48,7 @@ apps:
   desc: Executes the phpinfo() function.
   runtime: php
   framework: php
-  license: N/A
+  license: Unknown
   mem: 128
   repo: git://github.com/Stackato-Apps/phpinfo.git
   branch: master

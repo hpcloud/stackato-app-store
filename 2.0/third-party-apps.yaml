@@ -41,7 +41,6 @@ apps:
   home: https://github.com/Stackato-Apps/clojuresphere#readme
   icon: clojure.png
 
-
 - id: etherpad-lite
   name: Etherpad Lite
   desc: Collaborate on documents in really real-time.
@@ -55,6 +54,19 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/etherpad-lite#readme
   icon: etherpad.png
+
+- id: fedwiki
+  name: Smallest Federated Wiki
+  desc: A Very Futuristic Wiki by the inventor of Wiki himself
+  runtime: node
+  framework: node
+  license: GPL/MIT
+  mem: 128
+  services:
+    filesystem: fedwiki-fs
+  repo: git://github.com/Stackato-Apps/Smallest-Federated-Wiki.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
 
 - id: hastebin
   name: Hastebin
@@ -85,6 +97,18 @@ apps:
   home: https://github.com/Stackato-Apps/mezzanine#readme
   icon: mezzanine.png
 
+- id: moin
+  name: MoinMoin Wiki
+  desc: MoinMoin is an advanced, easy to use and extensible WikiEngine with a large community of users. Said in a few words, it is about collaboration on easily editable web pages.
+  framework: python
+  license: GPL
+  mem: 128
+  services:
+    filesystem: fs-moin
+  repo: git://github.com/Stackato-Apps/moin.git
+  branch: master
+  home: https://github.com/Stackato-Apps/moin#README
+  
 - id: multisweeper                                                              
   name: MultiSweeper                                                            
   desc: A multiplayer minesweeper-style game                                    
@@ -176,6 +200,7 @@ apps:
 - id: pinax-social
   name: Pinax Social
   desc: Pinax is an open-source platform built on the Django Web Framework. It provides numerous reusable Django apps, starter projects and infrastructure tools. pinax-social, a social networking site, is its "kitchen sink" demo demonstrating many of Pinax's features.
+  runtime: python27
   framework: python
   license: Unknown
   mem: 128
@@ -189,6 +214,7 @@ apps:
 - id: tornado-chat
   name: Tornado Chat with MongoDB
   desc: This is a multi-user chat application based on the Tornado Python web framework. It uses your Google account for login.
+  runtime: python27
   framework: python
   license: Unknown
   mem: 128
