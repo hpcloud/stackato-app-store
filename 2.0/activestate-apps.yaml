@@ -56,6 +56,7 @@ apps:
 - id: phpinfo
   name: PHP Info
   desc: Executes the phpinfo() function.
+  runtime: php
   framework: php
   license: N/A
   mem: 128

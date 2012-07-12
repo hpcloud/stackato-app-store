@@ -5,6 +5,17 @@ store:
   icon: activestate.png
 
 apps:
+- id: 4clojure
+  name: 4Clojure
+  desc: An interactive problem website for learning Clojure.
+  framework: buildpack
+  license: EPL
+  mem: 512
+  repo: git://github.com/Stackato-Apps/4clojure.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/4clojure#readme
+  icon: clojure.png
+
 - id: django-gtd
   name: DjangoGTD
   desc: A sample Getting Things Done (GTD) app using PostgreSQL, Memcached and the Django admin interface.
@@ -48,19 +59,6 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
 
-- id: hastebin
-  name: Hastebin
-  desc: Haste is an open-source pastebin software written in node.js, which is easily installable in any network.
-  framework: node
-  license: MIT
-  mem: 128
-  services:
-    redis: file-backing
-  repo: git://github.com/Stackato-Apps/haste-server.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/haste-server#readme
-  icon: hastebin.png
-
 - id: jaspersoft
   name: Jaspersoft BI Suite
   desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
@@ -77,6 +75,7 @@ apps:
 - id: joomla
   name: Joomla
   desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
+  runtime: php  
   framework: php
   license: GPLv2
   mem: 128
@@ -156,6 +155,7 @@ apps:
 - id: repl-it
   name: Repl.it
   desc: An online environment for interactively exploring programming languages, based on jsREPL
+  runtime: node
   framework: node
   license: MPL
   mem: 256
@@ -167,6 +167,7 @@ apps:
 - id: subway                                                                    
   name: Subway                                                                  
   desc: A web based irc client, built on top of node.js and socket.io           
+  runtime: node  
   framework: node                                                               
   license: MIT                                                                  
   mem: 128                                                                      

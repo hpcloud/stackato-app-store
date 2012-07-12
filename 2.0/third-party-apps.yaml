@@ -8,6 +8,7 @@ apps:
 - id: ace-editor
   name: Ace Editor
   desc: Ace is a standalone code editor written in JavaScript, used by Cloud9 IDE.
+  runtime: node
   framework: node
   license: MPL
   mem: 128
@@ -29,17 +30,6 @@ apps:
   home: https://github.com/Stackato-Apps/bugzilla#readme
   icon: bugzilla.png
 
-- id: 4clojure
-  name: 4Clojure
-  desc: An interactive problem website for learning Clojure.
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/4clojure.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/4clojure#readme
-  icon: clojure.png
-
 - id: clojuresphere
   name: ClojureSphere
   desc: Browsable dependency graph of Clojure projects.
@@ -55,6 +45,7 @@ apps:
 - id: etherpad-lite
   name: Etherpad Lite
   desc: Collaborate on documents in really real-time.
+  runtime: node
   framework: node
   license: EPL
   mem: 64
@@ -64,6 +55,20 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/etherpad-lite#readme
   icon: etherpad.png
+
+- id: hastebin
+  name: Hastebin
+  desc: Haste is an open-source pastebin software written in node.js, which is easily installable in any network.
+  runtime: node
+  framework: node
+  license: MIT
+  mem: 128
+  services:
+    redis: file-backing
+  repo: git://github.com/Stackato-Apps/haste-server.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/haste-server#readme
+  icon: hastebin.png
 
 - id: mezzanine
   name: Mezzanine
@@ -172,7 +177,7 @@ apps:
   name: Pinax Social
   desc: Pinax is an open-source platform built on the Django Web Framework. It provides numerous reusable Django apps, starter projects and infrastructure tools. pinax-social, a social networking site, is its "kitchen sink" demo demonstrating many of Pinax's features.
   framework: python
-  license: N/A
+  license: Unknown
   mem: 128
   services:
     mysql: mysql-pinax
@@ -185,7 +190,7 @@ apps:
   name: Tornado Chat with MongoDB
   desc: This is a multi-user chat application based on the Tornado Python web framework. It uses your Google account for login.
   framework: python
-  license: N/A
+  license: Unknown
   mem: 128
   services:
     mongodb: tornado-chat-mongodb
@@ -196,6 +201,7 @@ apps:
 - id: tty-js                                                                    
   name: tty-js                                                                  
   desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
+  runtime: node
   framework: node                                                               
   license: MIT                                                                  
   mem: 128                                                                      
