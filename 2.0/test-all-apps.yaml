@@ -5,28 +5,6 @@ store:
   icon: activestate.png
 
 apps:
-- id: 4clojure
-  name: 4Clojure
-  desc: An interactive problem website for learning Clojure.
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/4clojure.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/4clojure#readme
-  icon: clojure.png
-
-- id: clojuresphere
-  name: ClojureSphere
-  desc: Browsable dependency graph of Clojure projects.
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/clojuresphere.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/clojuresphere#readme
-  icon: clojure.png
-
 - id: django-gtd
   name: DjangoGTD
   desc: A sample Getting Things Done (GTD) app using PostgreSQL, Memcached and the Django admin interface.
@@ -150,17 +128,6 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/moin#README
 
-- id: node-chat
-  name: Node Chat
-  desc: A simple chat application in Node.js with no other dependencies. Originally written by Ryan Dahl, the creator of Node.js.
-  runtime: node
-  framework: node
-  license: Unknown
-  mem: 64
-  repo: git://github.com/Stackato-Apps/node-chat.git
-  branch: master
-  home: https://github.com/Stackato-Apps/node-chat#readme
-
 - id: osqa
   name: OSQA
   desc: The Open Source Q&A System.
@@ -207,15 +174,3 @@ apps:
   branch: stackato                                                                
   home: https://github.com/Stackato-Apps/subway#readme                          
   icon: subway.png
-  
-- id: tornado-chat
-  name: Tornado Chat with MongoDB
-  desc: This is a multi-user chat application based on the Tornado Python web framework. It uses your Google account for login.
-  framework: python
-  license: N/A
-  mem: 128
-  services:
-    mongodb: mongo-chat
-  repo: git://github.com/Stackato-Apps/tornado-chat-mongo.git
-  branch: master
-  home: https://github.com/Stackato-Apps/tornado-chat-mongo#README
