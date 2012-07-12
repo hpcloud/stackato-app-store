@@ -76,6 +76,8 @@ apps:
   framework: node
   license: MIT
   mem: 128
+  services:
+    redis: file-backing
   repo: git://github.com/Stackato-Apps/haste-server.git
   branch: stackato
   home: https://github.com/Stackato-Apps/haste-server#readme
