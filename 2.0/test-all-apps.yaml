@@ -132,6 +132,17 @@ apps:
   home: https://github.com/Stackato-Apps/pet-catalog#readme
   icon: pet-catalog.png
 
+- id: play-chat
+  name: Play! Chat
+  desc: An HTTP based chat application. We use the asynchronous request model to be able to handle a lot of simultaneous connected users without resources waste.
+  framework: buildpack
+  license: Unknown
+  mem: 256
+  repo: git://github.com/Stackato-Apps/play-chat.git
+  branch: master
+  home: https://github.com/Stackato-Apps/play-chat#readme
+  icon: chat.png
+
 - id: repl-it
   name: Repl.it
   desc: An online environment for interactively exploring programming languages, based on jsREPL
