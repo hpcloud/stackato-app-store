@@ -21,7 +21,7 @@ apps:
   desc: A sample Getting Things Done (GTD) app using PostgreSQL, Memcached and the Django admin interface.
   runtime: python27
   framework: python
-  license: N/A
+  license: Unknown
   mem: 128
   services:
     postgresql: postgresql-gtd
@@ -29,7 +29,7 @@ apps:
   env:
     DJANGO_SETTINGS_MODULE: settings
   repo: git://github.com/Stackato-Apps/django-gtd.git
-  branch: master
+  branch: stackato
   home: https://github.com/Stackato-Apps/django-gtd#README
   icon: python27.png
 
@@ -48,11 +48,23 @@ apps:
   home: https://github.com/Stackato-Apps/drupal#readme
   icon: drupal.png
 
+- id: httpbin
+  name: httpbin
+  desc: HTTP Request & Response Service
+  runtime: python27
+  framework: python
+  license: Unknown
+  mem: 128
+  repo: git://github.com/Stackato-Apps/httpbin.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/httpbin#README
+  icon: python27.png
+
 - id: jaspersoft
   name: Jaspersoft BI Suite
   desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
   framework: java_web
-  license: N/A
+  license: Unknown
   mem: 3072
   services:
     mysql: jrs-repo

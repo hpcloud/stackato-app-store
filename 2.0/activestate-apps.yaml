@@ -68,3 +68,13 @@ apps:
   branch: master
   home: https://github.com/Stackato-Apps/prezbuzz#readme
   icon: prezbuzz.png
+
+- id: scaling
+  name: Scaling Demo
+  desc: Displays IP and PID of the current instance of the app, useful for demonstrating multiple running instances.
+  framework: perl
+  license: Unknown
+  mem: 64
+  repo: git://github.com/Stackato-Apps/mojo-scalingdemo.git
+  branch: master
+  home: https://github.com/Stackato-Apps/mojo-scalingdemo#readme
