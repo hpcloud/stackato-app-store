@@ -64,17 +64,6 @@ apps:
   home: https://github.com/Stackato-Apps/joomla-cms#readme
   icon: joomla.png
 
-- id: live-game-editor
-  name: Live Game Editor
-  desc: Live video game editor in Clojure
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/live-cljs.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/live-cljs#readme
-  icon: clojure.png
-
 - id: osqa
   name: OSQA
   desc: The Open Source Q&A System.

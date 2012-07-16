@@ -46,17 +46,6 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/Smallest-Federated-Wiki/tree/stackato/.paas/stackato#readme
 
-- id: live-game-editor
-  name: Live Game Editor
-  desc: Live video game editor in Clojure
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/live-cljs.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/live-cljs#readme
-  icon: clojure.png
-
 - id: mezzanine
   name: Mezzanine
   desc: Vanilla Mezzanine Django-based CMS
