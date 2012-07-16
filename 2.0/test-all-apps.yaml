@@ -11,6 +11,8 @@ apps:
   framework: buildpack
   license: EPL
   mem: 512
+  env:
+    JVM_OPTS: "-Duser.home=$HOME"
   repo: git://github.com/Stackato-Apps/4clojure.git
   branch: stackato
   home: https://github.com/Stackato-Apps/4clojure#readme
@@ -48,31 +50,6 @@ apps:
   home: https://github.com/Stackato-Apps/drupal#readme
   icon: drupal.png
 
-- id: httpbin
-  name: httpbin
-  desc: HTTP Request & Response Service
-  runtime: python27
-  framework: python
-  license: Unknown
-  mem: 128
-  repo: git://github.com/Stackato-Apps/httpbin.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/httpbin#README
-  icon: python27.png
-
-- id: jaspersoft
-  name: Jaspersoft BI Suite
-  desc: Jaspersoft provides the most flexible, cost effective and widely deployed business intelligence software in the world, enabling better decision making through highly interactive, web-based reports, dashboards and analysis.
-  framework: java_web
-  license: Unknown
-  mem: 3072
-  services:
-    mysql: jrs-repo
-  repo: git://github.com/Stackato-Apps/jaspersoft.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/jaspersoft#README
-  icon: jaspersoft.png
-
 - id: joomla
   name: Joomla
   desc: Joomla is a free and open source content management framework (CMF) for publishing content on the World Wide Web and intranets and a model-view-controller (MVC) Web application framework that can also be used independently.
@@ -86,25 +63,6 @@ apps:
   branch: stackato
   home: https://github.com/Stackato-Apps/joomla-cms#readme
   icon: joomla.png
-
-- id: kandan
-  name: Kandan
-  desc: Kandan is a team chat application that supports file uploads, multiple rooms, shared music playing per-room, image/youtube embeds, and is extremely extensible.
-  runtime: ruby19
-  framework: buildpack
-  license: AGPL
-  mem: 256
-  services:
-    postgresql: pg-kandan
-    filesystem: fs-kandan
-  env:
-     BUILDPACK_URL: git://github.com/ActiveState/stackato-buildpack-ruby.git
-     RAILS_ENV: "production"
-     RACK_ENV: "production"
-  repo: git://github.com/Stackato-Apps/kandan.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/kandan#readme
-  icon: kandan.png
 
 - id: live-game-editor
   name: Live Game Editor
@@ -144,17 +102,6 @@ apps:
   home: https://github.com/Stackato-Apps/pet-catalog#readme
   icon: pet-catalog.png
 
-- id: play-chat
-  name: Play! Chat
-  desc: An HTTP based chat application. We use the asynchronous request model to be able to handle a lot of simultaneous connected users without resources waste.
-  framework: buildpack
-  license: Unknown
-  mem: 256
-  repo: git://github.com/Stackato-Apps/play-chat.git
-  branch: master
-  home: https://github.com/Stackato-Apps/play-chat#readme
-  icon: chat.png
-
 - id: repl-it
   name: Repl.it
   desc: An online environment for interactively exploring programming languages, based on jsREPL
@@ -178,3 +125,14 @@ apps:
   branch: stackato                                                                
   home: https://github.com/Stackato-Apps/subway#readme                          
   icon: subway.png
+
+- id: tryclojure
+  name: Try Clojure
+  desc: TryClojure is a online Clojure REPL written using Noir and Chris Done's jquery console.
+  framework: buildpack
+  license: EPL
+  mem: 512
+  repo: git://github.com/Stackato-Apps/tryclojure.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/tryclojure#readme
+  icon: clojure.png
