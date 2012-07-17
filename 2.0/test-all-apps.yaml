@@ -64,6 +64,18 @@ apps:
   home: https://github.com/Stackato-Apps/joomla-cms#readme
   icon: joomla.png
 
+- id: moviefun
+  name: Movie Fun
+  desc: This is a full JEE6 sample with JSF2.0, EJB3.1 and JPA2.0.
+  framework: java_ee
+  license: Unknown
+  mem: 512
+  services:
+    mysql: movieDatabase
+  repo: git://github.com/Stackato-Apps/moviefun.git
+  branch: stackato-store
+  home: https://github.com/Stackato-Apps/moviefun#readme
+
 - id: osqa
   name: OSQA
   desc: The Open Source Q&A System.
@@ -114,14 +126,3 @@ apps:
   branch: stackato                                                                
   home: https://github.com/Stackato-Apps/subway#readme                          
   icon: subway.png
-
-- id: tryclojure
-  name: Try Clojure
-  desc: TryClojure is a online Clojure REPL written using Noir and Chris Done's jquery console.
-  framework: buildpack
-  license: EPL
-  mem: 512
-  repo: git://github.com/Stackato-Apps/tryclojure.git
-  branch: stackato
-  home: https://github.com/Stackato-Apps/tryclojure#readme
-  icon: clojure.png

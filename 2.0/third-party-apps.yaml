@@ -284,6 +284,17 @@ apps:
   home: https://github.com/Stackato-Apps/tornado-chat-mongo#README
   icon: chat.png
 
+- id: tryclojure
+  name: Try Clojure
+  desc: TryClojure is a online Clojure REPL written using Noir and Chris Done's jquery console.
+  framework: buildpack
+  license: EPL
+  mem: 512
+  repo: git://github.com/Stackato-Apps/tryclojure.git
+  branch: stackato
+  home: https://github.com/Stackato-Apps/tryclojure#readme
+  icon: clojure.png
+
 - id: tty-js                                                                    
   name: tty-js                                                                  
   desc: A terminal in your browser using node.js and socket.io. Based on Fabrice Bellards vt100 for jslinux.
